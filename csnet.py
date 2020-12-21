@@ -32,24 +32,25 @@ class CSNET(nn.Module):
         super(CSNET,self).__init__()
 
         self.channels = channels
-        self.fcr = 51
-        self.base = 16
+        self.fcr = 153
+        self.base = 1
 
         self.sample = nn.Conv2d(self.channels,self.fcr,kernel_size=32,padding=0,stride=32,bias=False)
-        self.initial = nn.Conv2d(self.fcr,1024,kernel_size=1,padding=0,stride=1,bias=False)
+        self.initial = nn.Conv2d(self.fcr,3072,kernel_size=1,padding=0,stride=1,bias=False)
+        self.pixelshuffle = nn.PixelShuffle(32)
         self.conv1 = nn.Conv2d(self.channels,self.base,kernel_size=3,padding=1,stride=1,bias=False)
         self.conv2 = nn.Conv2d(self.base,self.base,kernel_size=3,padding=1,stride=1,bias=False)
-        self.conv3 = nn.Conv2d(self.base,1,kernel_size=3,padding=1,stride=1,bias=False)
+        self.conv3 = nn.Conv2d(self.base,self.channels,kernel_size=3,padding=1,stride=1,bias=False)
         self.relu = nn.ReLU(inplace=True)
 
     def forward(self,input,batch_size,ngpu):
-        self.output = self.sample(input)
-        self.output = self.initial(self.output)
-        self.output = block2image(self.output,batch_size,ngpu)
-        self.output = self.relu(self.conv1(self.output))
-        self.output = self.relu(self.conv2(self.output))
-        self.output = self.relu(self.conv2(self.output))
-        self.output = self.relu(self.conv2(self.output))
-        self.output = self.relu(self.conv3(self.output))
+        output = self.sample(input)
+        output = self.initial(output)
+        output = self.pixelshuffle(output)
+        output = self.relu(self.conv1(output))
+        output = self.relu(self.conv2(output))
+        output = self.relu(self.conv2(output))
+        output = self.relu(self.conv2(output))
+        output = self.conv3(output)
 
-        return self.output
+        return output
