@@ -1,0 +1,844 @@
+Cloning into 'CVPRNAS-2022-Starting-Kit'...
+Looking in links: https://download.pytorch.org/whl/cu113/torch_stable.html
+Requirement already satisfied: torch==1.10.1+cu113 in /usr/local/lib/python3.8/dist-packages (from -r requirements.txt (line 3)) (1.10.1+cu113)
+Requirement already satisfied: torchvision==0.11.2+cu113 in /usr/local/lib/python3.8/dist-packages (from -r requirements.txt (line 4)) (0.11.2+cu113)
+Collecting sentry-sdk==1.5.0
+  Downloading sentry_sdk-1.5.0-py2.py3-none-any.whl (140 kB)
+Requirement already satisfied: sklearn in /usr/local/lib/python3.8/dist-packages (from -r requirements.txt (line 16)) (0.0)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.8/dist-packages (from torch==1.10.1+cu113->-r requirements.txt (line 3)) (4.1.0)
+Requirement already satisfied: pillow!=8.3.0,>=5.3.0 in /usr/local/lib/python3.8/dist-packages (from torchvision==0.11.2+cu113->-r requirements.txt (line 4)) (9.0.1)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from torchvision==0.11.2+cu113->-r requirements.txt (line 4)) (1.22.2)
+Requirement already satisfied: certifi in /usr/lib/python3/dist-packages (from sentry-sdk==1.5.0->-r requirements.txt (line 5)) (2019.11.28)
+Requirement already satisfied: urllib3>=1.10.0 in /usr/lib/python3/dist-packages (from sentry-sdk==1.5.0->-r requirements.txt (line 5)) (1.25.8)
+Requirement already satisfied: scikit-learn in /usr/local/lib/python3.8/dist-packages (from sklearn->-r requirements.txt (line 16)) (1.0.2)
+Requirement already satisfied: scipy>=1.1.0 in /usr/local/lib/python3.8/dist-packages (from scikit-learn->sklearn->-r requirements.txt (line 16)) (1.8.0)
+Requirement already satisfied: joblib>=0.11 in /usr/local/lib/python3.8/dist-packages (from scikit-learn->sklearn->-r requirements.txt (line 16)) (1.1.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /usr/local/lib/python3.8/dist-packages (from scikit-learn->sklearn->-r requirements.txt (line 16)) (3.1.0)
+Installing collected packages: sentry-sdk
+Successfully installed sentry-sdk-1.5.0
+INFO: Scanning...
+INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+
+Job d8a88dd8-b0bd-b543-53c8-382f2e82e90d has started
+Log file is located at: /root/.azcopy/d8a88dd8-b0bd-b543-53c8-382f2e82e90d.log
+
+0.0 %, 0 Done, 0 Failed, 21 Pending, 0 Skipped, 21 Total, INFO: azcopy: A newer version 10.18.1 is available to download
+
+0.0 %, 0 Done, 0 Failed, 21 Pending, 0 Skipped, 21 Total, 
+
+
+Job d8a88dd8-b0bd-b543-53c8-382f2e82e90d summary
+Elapsed Time (Minutes): 0.0334
+Number of File Transfers: 21
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 21
+Number of Transfers Completed: 21
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 201989991
+Final Job Status: Completed
+
+INFO: Scanning...
+INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+
+Job 4672d914-c32b-a94f-6361-bd1514cf472e has started
+Log file is located at: /root/.azcopy/4672d914-c32b-a94f-6361-bd1514cf472e.log
+
+0.0 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, INFO: azcopy: A newer version 10.18.1 is available to download
+
+0.0 %, 0 Done, 0 Failed, 1 Pending, 0 Skipped, 1 Total, 
+
+
+Job 4672d914-c32b-a94f-6361-bd1514cf472e summary
+Elapsed Time (Minutes): 0.0334
+Number of File Transfers: 1
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 1
+Number of Transfers Completed: 1
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 50049
+Final Job Status: Completed
+
+Archive:  submission.zip
+   creating: submission/configs/
+  inflating: submission/configs/common.yml  
+  inflating: submission/configs/.DS_Store  
+   creating: submission/configs/supernet/
+  inflating: submission/configs/supernet/mobilenet.yml  
+  inflating: submission/configs/supernet/.DS_Store  
+  inflating: submission/configs/fine_tuning_process.yml  
+  inflating: submission/configs/train_supernet_models.yml  
+  inflating: submission/configs/evo_search.yml  
+  inflating: submission/data_processor.py  
+   creating: submission/evaluate/
+  inflating: submission/evaluate/.DS_Store  
+  inflating: submission/evaluate/imagenet_eval.py  
+  inflating: submission/evaluate/nas_eval_mobilenet.py  
+  inflating: submission/fine_tuning_process.py  
+  inflating: submission/helpers.py   
+  inflating: submission/loss_ops.py  
+   creating: submission/models/
+  inflating: submission/models/.DS_Store  
+   creating: submission/models/mobilenet_search_space/
+  inflating: submission/models/mobilenet_search_space/.DS_Store  
+ extracting: submission/models/mobilenet_search_space/__init__.py  
+  inflating: submission/models/mobilenet_search_space/nas_dynamic_model.py  
+  inflating: submission/models/mobilenet_search_space/nas_static_model.py  
+   creating: submission/models/mobilenet_search_space/modules/
+  inflating: submission/models/mobilenet_search_space/modules/static_layers.py  
+  inflating: submission/models/mobilenet_search_space/modules/nn_base.py  
+  inflating: submission/models/mobilenet_search_space/modules/activations.py  
+  inflating: submission/models/mobilenet_search_space/modules/dynamic_layers.py  
+ extracting: submission/models/mobilenet_search_space/modules/__init__.py  
+  inflating: submission/models/mobilenet_search_space/modules/nn_utils.py  
+  inflating: submission/models/mobilenet_search_space/modules/dynamic_ops.py  
+  inflating: submission/models/mobilenet_search_space/model_factory.py  
+  inflating: submission/nas.py       
+  inflating: submission/search.py    
+   creating: submission/solver/
+  inflating: submission/solver/build.py  
+  inflating: submission/solver/lr_scheduler.py  
+  inflating: submission/solver/__init__.py  
+  inflating: submission/train_supernet.py  
+  inflating: submission/trainer.py   
+   creating: submission/utils/
+  inflating: submission/utils/logging.py  
+  inflating: submission/utils/config.py  
+  inflating: submission/utils/comm.py  
+  inflating: submission/utils/saver.py  
+  inflating: submission/utils/flops_counter.py  
+  inflating: submission/utils/progress.py  
+rm -Rf scoring
+rm -Rf package
+mkdir scoring
+echo Creating failsafe json, this will be overwritten by a successful submission...
+Creating failsafe json, this will be overwritten by a successful submission...
+echo '{"Sadie_Runtime": -1, "Sadie_Params": -1, "Sadie_Raw_Score": -1, "Sadie_Adj_Score": -100, "Isabella_Runtime": -1, "Isabella_Params": -1, "Isabella_Raw_Score": -1, "Isabella_Adj_Score": -100, "Chester_Runtime": -1, "Chester_Params": -1, "Chester_Raw_Score": -1, "Chester_Adj_Score": -100, "Final_Score": -100}' >> scoring/final_results.json
+rm -Rf package
+mkdir package
+mkdir package/predictions
+mkdir package/datasets
+rsync -ar --exclude='**/test_y.npy' datasets/* package/datasets/
+cp -R submission/* package
+cp -R evaluation/main.py package/main.py
+cd package; python3 main.py
+Requirement already satisfied: scikit-learn in /usr/local/lib/python3.8/dist-packages (1.0.2)
+Requirement already satisfied: numpy>=1.14.6 in /usr/local/lib/python3.8/dist-packages (from scikit-learn) (1.22.2)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /usr/local/lib/python3.8/dist-packages (from scikit-learn) (3.1.0)
+Requirement already satisfied: scipy>=1.1.0 in /usr/local/lib/python3.8/dist-packages (from scikit-learn) (1.8.0)
+Requirement already satisfied: joblib>=0.11 in /usr/local/lib/python3.8/dist-packages (from scikit-learn) (1.1.0)
+===========================================================================
+=============    Your CVPR-NAS 2022 Submission is running     =============
+===========================================================================
+========== Dataset  Isabella  =============================================
+  Metadata:
+   - num_classes         : 6
+   - input_shape         : [4500, 1, 27, 18]
+   - codename            : Isabella
+   - benchmark           : 27.5
+   - time_remaining      : 3599.9821734428406
+   - dataset_index       : 0
+   - dataset_total_number: 3
+
+=== Processing Data ===
+  Allotted compute time remaining: ~59m,59s
+Experiment dir : ./results
+
+=== Performing NAS ===
+  Allotted compute time remaining: ~59m,59s
+
+=== Training ===
+  Allotted compute time remaining: ~59m,58s
+####    Train Supernet of Isabella     ####
+05/31 06:50:53 AM Training lr 0.0001
+05/31 06:50:59 AM Epoch: [0][  0/140]	Time  6.428 ( 6.428)	Data  0.295 ( 0.295)	Loss 1.7914e+00 (1.7914e+00)	Acc  12.50 ( 12.50)
+05/31 06:51:38 AM Epoch: [0][ 70/140]	Time  0.506 ( 0.630)	Data  0.001 ( 0.006)	Loss 1.7883e+00 (1.7883e+00)	Acc  25.00 ( 18.18)
+05/31 06:52:12 AM Test: [ 0/19]	Time  0.183 ( 0.183)	Loss 1.8403e+00 (1.8403e+00)	Acc   9.38 (  9.38)
+05/31 06:52:13 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 0, 'flops': 10.741312, 'params': 3.702294, 'loss': 1.805076575279236, 'resolution': [24, 16], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 15.499999974568684}
+05/31 06:52:16 AM Test: [ 0/19]	Time  0.215 ( 0.215)	Loss 1.8520e+00 (1.8520e+00)	Acc   9.38 (  9.38)
+05/31 06:52:18 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 0, 'flops': 254.352976, 'params': 39.769088, 'loss': 1.8019418414433797, 'resolution': [33, 22], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 20.49999994913737}
+05/31 06:52:19 AM save best supernet_model!
+05/31 06:52:19 AM Training lr 0.03258264382212907
+05/31 06:52:19 AM Epoch: [1][  0/140]	Time  0.693 ( 0.693)	Data  0.140 ( 0.140)	Loss 1.7803e+00 (1.7803e+00)	Acc  18.75 ( 18.75)
+05/31 06:52:51 AM Epoch: [1][ 70/140]	Time  0.434 ( 0.454)	Data  0.001 ( 0.003)	Loss 1.7775e+00 (1.7769e+00)	Acc  25.00 ( 19.37)
+05/31 06:53:23 AM Test: [ 0/19]	Time  0.168 ( 0.168)	Loss 1.8007e+00 (1.8007e+00)	Acc  21.88 ( 21.88)
+05/31 06:53:24 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 1, 'flops': 10.741312, 'params': 3.702294, 'loss': 1.7973457098007202, 'resolution': [24, 16], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 16.999999974568684}
+05/31 06:53:28 AM Test: [ 0/19]	Time  0.200 ( 0.200)	Loss 1.8153e+00 (1.8153e+00)	Acc  18.75 ( 18.75)
+05/31 06:53:29 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 1, 'flops': 254.352976, 'params': 39.769088, 'loss': 1.8175910393397012, 'resolution': [33, 22], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 19.833333333333332}
+05/31 06:53:29 AM save best supernet_model!
+05/31 06:53:29 AM Training lr 0.06033071676240449
+05/31 06:53:30 AM Epoch: [2][  0/140]	Time  0.621 ( 0.621)	Data  0.144 ( 0.144)	Loss 1.7624e+00 (1.7624e+00)	Acc   9.38 (  9.38)
+05/31 06:54:00 AM Epoch: [2][ 70/140]	Time  0.413 ( 0.433)	Data  0.002 ( 0.003)	Loss 1.7889e+00 (1.7709e+00)	Acc  18.75 ( 19.85)
+05/31 06:54:33 AM Test: [ 0/19]	Time  0.170 ( 0.170)	Loss 1.8303e+00 (1.8303e+00)	Acc   3.12 (  3.12)
+05/31 06:54:34 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 2, 'flops': 10.741312, 'params': 3.702294, 'loss': 1.8037014118830363, 'resolution': [24, 16], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 15.333333320617676}
+05/31 06:54:38 AM Test: [ 0/19]	Time  0.199 ( 0.199)	Loss 1.8548e+00 (1.8548e+00)	Acc  15.62 ( 15.62)
+05/31 06:54:39 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 2, 'flops': 254.352976, 'params': 39.769088, 'loss': 1.8107252232233684, 'resolution': [33, 22], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 16.499999987284344}
+05/31 06:54:39 AM Training lr 0.07938926261462366
+05/31 06:54:39 AM Epoch: [3][  0/140]	Time  0.612 ( 0.612)	Data  0.138 ( 0.138)	Loss 1.7818e+00 (1.7818e+00)	Acc  15.62 ( 15.62)
+05/31 06:55:09 AM Epoch: [3][ 70/140]	Time  0.429 ( 0.433)	Data  0.001 ( 0.003)	Loss 1.7877e+00 (1.7847e+00)	Acc  21.88 ( 19.45)
+05/31 06:55:41 AM Test: [ 0/19]	Time  0.180 ( 0.180)	Loss 1.8474e+00 (1.8474e+00)	Acc  12.50 ( 12.50)
+05/31 06:55:42 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 3, 'flops': 10.741312, 'params': 3.702294, 'loss': 1.806726263364156, 'resolution': [24, 16], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 15.833333307902018}
+05/31 06:55:46 AM Test: [ 0/19]	Time  0.202 ( 0.202)	Loss 1.7828e+00 (1.7828e+00)	Acc  21.88 ( 21.88)
+05/31 06:55:47 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 3, 'flops': 254.352976, 'params': 39.769088, 'loss': 1.8107256825764975, 'resolution': [33, 22], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 19.666666666666668}
+05/31 06:55:47 AM Training lr 0.06545084971874737
+05/31 06:55:47 AM Epoch: [4][  0/140]	Time  0.639 ( 0.639)	Data  0.152 ( 0.152)	Loss 1.7698e+00 (1.7698e+00)	Acc  18.75 ( 18.75)
+05/31 06:56:17 AM Epoch: [4][ 70/140]	Time  0.468 ( 0.428)	Data  0.002 ( 0.004)	Loss 1.7744e+00 (1.7760e+00)	Acc  15.62 ( 21.96)
+05/31 06:56:48 AM Test: [ 0/19]	Time  0.174 ( 0.174)	Loss 1.8384e+00 (1.8384e+00)	Acc  12.50 ( 12.50)
+05/31 06:56:48 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 4, 'flops': 10.741312, 'params': 3.702294, 'loss': 1.8089768044153849, 'resolution': [24, 16], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 16.5}
+05/31 06:56:52 AM Test: [ 0/19]	Time  0.205 ( 0.205)	Loss 1.7227e+00 (1.7227e+00)	Acc  21.88 ( 21.88)
+05/31 06:56:53 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 4, 'flops': 254.352976, 'params': 39.769088, 'loss': 1.7857240104675294, 'resolution': [33, 22], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 19.166666666666668}
+05/31 06:56:53 AM Training lr 0.05000000000000002
+05/31 06:56:53 AM Epoch: [5][  0/140]	Time  0.604 ( 0.604)	Data  0.138 ( 0.138)	Loss 1.7804e+00 (1.7804e+00)	Acc  28.12 ( 28.12)
+05/31 06:57:25 AM Epoch: [5][ 70/140]	Time  0.395 ( 0.456)	Data  0.001 ( 0.003)	Loss 1.7738e+00 (1.7704e+00)	Acc  31.25 ( 28.43)
+05/31 06:57:58 AM Test: [ 0/19]	Time  0.175 ( 0.175)	Loss 1.7830e+00 (1.7830e+00)	Acc  28.12 ( 28.12)
+05/31 06:57:58 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 5, 'flops': 10.741312, 'params': 3.702294, 'loss': 1.8064583476384481, 'resolution': [24, 16], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 17.666666615804036}
+05/31 06:58:02 AM Test: [ 0/19]	Time  0.206 ( 0.206)	Loss 1.8579e+00 (1.8579e+00)	Acc  28.12 ( 28.12)
+05/31 06:58:03 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 5, 'flops': 254.352976, 'params': 39.769088, 'loss': 1.7931890932718912, 'resolution': [33, 22], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 24.0}
+05/31 06:58:04 AM save best supernet_model!
+05/31 06:58:04 AM Training lr 0.03454915028125263
+05/31 06:58:04 AM Epoch: [6][  0/140]	Time  0.672 ( 0.672)	Data  0.154 ( 0.154)	Loss 1.7794e+00 (1.7794e+00)	Acc  34.38 ( 34.38)
+05/31 06:58:35 AM Epoch: [6][ 70/140]	Time  0.411 ( 0.447)	Data  0.001 ( 0.004)	Loss 1.7864e+00 (1.7566e+00)	Acc  28.12 ( 32.53)
+05/31 06:59:06 AM Test: [ 0/19]	Time  0.168 ( 0.168)	Loss 1.7987e+00 (1.7987e+00)	Acc  15.62 ( 15.62)
+05/31 06:59:06 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 6, 'flops': 10.741312, 'params': 3.702294, 'loss': 1.7967436424891154, 'resolution': [24, 16], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 16.499999974568684}
+05/31 06:59:10 AM Test: [ 0/19]	Time  0.199 ( 0.199)	Loss 1.7529e+00 (1.7529e+00)	Acc  34.38 ( 34.38)
+05/31 06:59:11 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 6, 'flops': 254.352976, 'params': 39.769088, 'loss': 1.7743541097640991, 'resolution': [33, 22], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 24.666666641235352}
+05/31 06:59:11 AM Training lr 0.02061073738537635
+05/31 06:59:12 AM Epoch: [7][  0/140]	Time  0.576 ( 0.576)	Data  0.140 ( 0.140)	Loss 1.7512e+00 (1.7512e+00)	Acc  56.25 ( 56.25)
+05/31 06:59:41 AM Epoch: [7][ 70/140]	Time  0.451 ( 0.419)	Data  0.001 ( 0.003)	Loss 1.7401e+00 (1.7434e+00)	Acc  53.12 ( 43.49)
+05/31 07:00:11 AM Test: [ 0/19]	Time  0.176 ( 0.176)	Loss 1.7894e+00 (1.7894e+00)	Acc  12.50 ( 12.50)
+05/31 07:00:12 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 7, 'flops': 10.741312, 'params': 3.702294, 'loss': 1.8001739072799683, 'resolution': [24, 16], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 16.333333333333332}
+05/31 07:00:15 AM Test: [ 0/19]	Time  0.208 ( 0.208)	Loss 1.7461e+00 (1.7461e+00)	Acc  31.25 ( 31.25)
+05/31 07:00:16 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 7, 'flops': 254.352976, 'params': 39.769088, 'loss': 1.7939525810877481, 'resolution': [33, 22], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 27.333333231608073}
+05/31 07:00:17 AM save best supernet_model!
+05/31 07:00:17 AM Training lr 0.009549150281252633
+05/31 07:00:18 AM Epoch: [8][  0/140]	Time  0.605 ( 0.605)	Data  0.147 ( 0.147)	Loss 1.7908e+00 (1.7908e+00)	Acc  46.88 ( 46.88)
+05/31 07:00:47 AM Epoch: [8][ 70/140]	Time  0.395 ( 0.415)	Data  0.001 ( 0.003)	Loss 1.7260e+00 (1.6977e+00)	Acc  59.38 ( 56.43)
+05/31 07:01:17 AM Test: [ 0/19]	Time  0.169 ( 0.169)	Loss 1.8098e+00 (1.8098e+00)	Acc  25.00 ( 25.00)
+05/31 07:01:17 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 8, 'flops': 10.741312, 'params': 3.702294, 'loss': 1.8215209643046062, 'resolution': [24, 16], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 19.166666615804036}
+05/31 07:01:21 AM Test: [ 0/19]	Time  0.205 ( 0.205)	Loss 1.8522e+00 (1.8522e+00)	Acc  34.38 ( 34.38)
+05/31 07:01:22 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 8, 'flops': 254.352976, 'params': 39.769088, 'loss': 1.9436336946487427, 'resolution': [33, 22], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 30.666666615804036}
+05/31 07:01:23 AM save best supernet_model!
+05/31 07:01:23 AM Training lr 0.0024471741852423235
+05/31 07:01:23 AM Epoch: [9][  0/140]	Time  0.598 ( 0.598)	Data  0.149 ( 0.149)	Loss 1.7392e+00 (1.7392e+00)	Acc  78.12 ( 78.12)
+05/31 07:01:52 AM Epoch: [9][ 70/140]	Time  0.440 ( 0.415)	Data  0.001 ( 0.003)	Loss 1.8223e+00 (1.6864e+00)	Acc  71.88 ( 73.46)
+05/31 07:02:23 AM Test: [ 0/19]	Time  0.171 ( 0.171)	Loss 1.8223e+00 (1.8223e+00)	Acc  21.88 ( 21.88)
+05/31 07:02:23 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 9, 'flops': 10.741312, 'params': 3.702294, 'loss': 1.8252720562616984, 'resolution': [24, 16], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 19.999999974568684}
+05/31 07:02:27 AM Test: [ 0/19]	Time  0.196 ( 0.196)	Loss 2.0887e+00 (2.0887e+00)	Acc  34.38 ( 34.38)
+05/31 07:02:28 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 9, 'flops': 254.352976, 'params': 39.769088, 'loss': 2.2196338526407877, 'resolution': [33, 22], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 29.333333282470704}
+####    Search of Isabella    ####
+05/31 07:02:30 AM Test: [ 0/19]	Time  0.191 ( 0.191)	Loss 1.8404e+00 (1.8404e+00)	Acc  31.25 ( 31.25)
+05/31 07:02:31 AM {'net_id': 'net_evo_0_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 43.657344, 'params': 9.144294, 'loss': 1.837677230834961, 'resolution': [27, 18], 'width': [16, 32, 24, 40, 72, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 4, 5, 4, 3], 'depth': [1, 5, 3, 3, 3, 5, 6], 'acc': 19.166666615804036}
+05/31 07:02:34 AM Test: [ 0/19]	Time  0.184 ( 0.184)	Loss 1.9242e+00 (1.9242e+00)	Acc  15.62 ( 15.62)
+05/31 07:02:35 AM {'net_id': 'net_evo_0_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 50.859552, 'params': 12.873606, 'loss': 1.8210338767369587, 'resolution': [27, 18], 'width': [16, 24, 32, 32, 80, 120, 192, 192, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 4, 6, 5, 3], 'depth': [2, 2, 4, 3, 7, 6, 9], 'acc': 18.833333282470704}
+05/31 07:02:38 AM Test: [ 0/19]	Time  0.189 ( 0.189)	Loss 1.9016e+00 (1.9016e+00)	Acc  18.75 ( 18.75)
+05/31 07:02:39 AM {'net_id': 'net_evo_0_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 108.234944, 'params': 25.029366, 'loss': 1.837032953898112, 'resolution': [27, 18], 'width': [24, 24, 32, 72, 104, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 5, 5, 4, 6], 'depth': [1, 3, 3, 6, 6, 6, 9], 'acc': 21.0}
+05/31 07:02:41 AM Test: [ 0/19]	Time  0.189 ( 0.189)	Loss 1.8751e+00 (1.8751e+00)	Acc  28.12 ( 28.12)
+05/31 07:02:42 AM {'net_id': 'net_evo_0_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 62.201952, 'params': 13.143406, 'loss': 1.8297200504938762, 'resolution': [27, 18], 'width': [24, 24, 32, 40, 72, 192, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 4, 5, 3, 3], 'depth': [2, 5, 4, 4, 4, 8, 8], 'acc': 19.666666641235352}
+05/31 07:02:45 AM Test: [ 0/19]	Time  0.194 ( 0.194)	Loss 1.8041e+00 (1.8041e+00)	Acc  31.25 ( 31.25)
+05/31 07:02:46 AM {'net_id': 'net_evo_0_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 55.897152, 'params': 10.908662, 'loss': 1.8154534530639648, 'resolution': [27, 18], 'width': [24, 24, 32, 56, 72, 144, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 4, 4, 3, 3], 'depth': [2, 3, 5, 3, 5, 8, 9], 'acc': 18.999999974568684}
+05/31 07:02:49 AM Test: [ 0/19]	Time  0.188 ( 0.188)	Loss 1.7762e+00 (1.7762e+00)	Acc  31.25 ( 31.25)
+05/31 07:02:50 AM {'net_id': 'net_evo_0_5', 'mode': 'evaluate', 'epoch': 0, 'flops': 74.666336, 'params': 11.336486, 'loss': 1.7936853202184042, 'resolution': [27, 18], 'width': [16, 32, 24, 64, 120, 104, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 4, 3, 4, 3], 'depth': [1, 4, 5, 7, 6, 5, 9], 'acc': 20.333333333333332}
+05/31 07:02:53 AM Test: [ 0/19]	Time  0.189 ( 0.189)	Loss 1.7656e+00 (1.7656e+00)	Acc  28.12 ( 28.12)
+05/31 07:02:54 AM {'net_id': 'net_evo_0_6', 'mode': 'evaluate', 'epoch': 0, 'flops': 45.32568, 'params': 10.309174, 'loss': 1.8038161929448446, 'resolution': [27, 18], 'width': [16, 24, 24, 32, 64, 120, 144, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 4, 6, 3, 3], 'depth': [2, 5, 3, 7, 4, 8, 9], 'acc': 19.833333333333332}
+05/31 07:02:56 AM Test: [ 0/19]	Time  0.209 ( 0.209)	Loss 1.7594e+00 (1.7594e+00)	Acc  37.50 ( 37.50)
+05/31 07:02:57 AM {'net_id': 'net_evo_0_7', 'mode': 'evaluate', 'epoch': 0, 'flops': 54.753824, 'params': 17.507302, 'loss': 1.7930673917134603, 'resolution': [27, 18], 'width': [24, 32, 24, 40, 72, 104, 224, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 6], 'depth': [1, 4, 4, 4, 3, 7, 9], 'acc': 21.166666641235352}
+05/31 07:03:00 AM Test: [ 0/19]	Time  0.194 ( 0.194)	Loss 1.8920e+00 (1.8920e+00)	Acc  18.75 ( 18.75)
+05/31 07:03:01 AM {'net_id': 'net_evo_0_8', 'mode': 'evaluate', 'epoch': 0, 'flops': 79.449312, 'params': 14.835934, 'loss': 1.8218350172042848, 'resolution': [27, 18], 'width': [24, 32, 32, 48, 88, 192, 224, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 3, 5, 4, 6, 3], 'depth': [2, 3, 3, 7, 7, 4, 7], 'acc': 18.49999994913737}
+05/31 07:03:04 AM Test: [ 0/19]	Time  0.187 ( 0.187)	Loss 1.7894e+00 (1.7894e+00)	Acc  31.25 ( 31.25)
+05/31 07:03:05 AM {'net_id': 'net_evo_0_9', 'mode': 'evaluate', 'epoch': 0, 'flops': 86.742024, 'params': 20.43315, 'loss': 1.7875870450337727, 'resolution': [27, 18], 'width': [16, 24, 32, 72, 96, 168, 192, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 4, 5, 6], 'depth': [2, 3, 4, 6, 4, 6, 8], 'acc': 20.333333333333332}
+05/31 07:03:08 AM Test: [ 0/19]	Time  0.189 ( 0.189)	Loss 1.7822e+00 (1.7822e+00)	Acc  31.25 ( 31.25)
+05/31 07:03:08 AM {'net_id': 'net_evo_0_10', 'mode': 'evaluate', 'epoch': 0, 'flops': 77.490432, 'params': 12.502406, 'loss': 1.795273634592692, 'resolution': [27, 18], 'width': [24, 32, 24, 72, 120, 168, 192, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 4, 5, 3, 3], 'depth': [1, 4, 3, 3, 7, 5, 7], 'acc': 20.166666641235352}
+05/31 07:03:11 AM Test: [ 0/19]	Time  0.183 ( 0.183)	Loss 1.9140e+00 (1.9140e+00)	Acc  15.62 ( 15.62)
+05/31 07:03:12 AM {'net_id': 'net_evo_0_11', 'mode': 'evaluate', 'epoch': 0, 'flops': 93.796624, 'params': 20.305694, 'loss': 1.802186336517334, 'resolution': [27, 18], 'width': [16, 32, 24, 72, 88, 168, 224, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 3, 3, 5, 6], 'depth': [1, 2, 5, 4, 7, 4, 7], 'acc': 17.99999994913737}
+05/31 07:03:14 AM Test: [ 0/19]	Time  0.190 ( 0.190)	Loss 1.7664e+00 (1.7664e+00)	Acc  28.12 ( 28.12)
+05/31 07:03:15 AM {'net_id': 'net_evo_0_12', 'mode': 'evaluate', 'epoch': 0, 'flops': 43.864688, 'params': 10.290038, 'loss': 1.8300818077723184, 'resolution': [27, 18], 'width': [16, 24, 24, 56, 64, 104, 192, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 3, 4, 5, 5, 3], 'depth': [1, 4, 3, 3, 6, 4, 8], 'acc': 20.166666615804036}
+05/31 07:03:18 AM Test: [ 0/19]	Time  0.192 ( 0.192)	Loss 1.7980e+00 (1.7980e+00)	Acc  18.75 ( 18.75)
+05/31 07:03:18 AM {'net_id': 'net_evo_0_13', 'mode': 'evaluate', 'epoch': 0, 'flops': 46.852704, 'params': 11.478398, 'loss': 1.8024884939193726, 'resolution': [27, 18], 'width': [24, 32, 32, 32, 64, 120, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 3, 5, 5, 3], 'depth': [1, 2, 5, 6, 5, 6, 8], 'acc': 19.666666615804036}
+05/31 07:03:21 AM Test: [ 0/19]	Time  0.187 ( 0.187)	Loss 1.7044e+00 (1.7044e+00)	Acc  31.25 ( 31.25)
+05/31 07:03:22 AM {'net_id': 'net_evo_0_14', 'mode': 'evaluate', 'epoch': 0, 'flops': 72.100968, 'params': 10.964886, 'loss': 1.7839137633641562, 'resolution': [27, 18], 'width': [24, 32, 32, 56, 104, 120, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 3, 6, 4, 3], 'depth': [2, 3, 5, 7, 5, 7, 9], 'acc': 20.166666615804036}
+05/31 07:03:25 AM Test: [ 0/19]	Time  0.186 ( 0.186)	Loss 1.7533e+00 (1.7533e+00)	Acc  37.50 ( 37.50)
+05/31 07:03:26 AM {'net_id': 'net_evo_0_15', 'mode': 'evaluate', 'epoch': 0, 'flops': 48.579048, 'params': 7.609886, 'loss': 1.8052693065007528, 'resolution': [27, 18], 'width': [24, 24, 24, 72, 80, 104, 168, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 3, 6, 3, 3], 'depth': [1, 3, 4, 7, 3, 7, 8], 'acc': 20.999999974568684}
+05/31 07:03:28 AM Test: [ 0/19]	Time  0.195 ( 0.195)	Loss 1.8139e+00 (1.8139e+00)	Acc  28.12 ( 28.12)
+05/31 07:03:29 AM {'net_id': 'net_evo_0_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 88.513976, 'params': 15.653446, 'loss': 1.8110021336873372, 'resolution': [27, 18], 'width': [24, 24, 32, 72, 80, 168, 144, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 5, 4, 6, 6], 'depth': [2, 5, 5, 4, 4, 6, 5], 'acc': 17.666666641235352}
+05/31 07:03:32 AM Test: [ 0/19]	Time  0.203 ( 0.203)	Loss 1.8258e+00 (1.8258e+00)	Acc  21.88 ( 21.88)
+05/31 07:03:32 AM {'net_id': 'net_evo_0_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 88.555088, 'params': 11.366862, 'loss': 1.8463403685887654, 'resolution': [27, 18], 'width': [24, 32, 24, 72, 96, 144, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 4, 5, 3, 3], 'depth': [1, 2, 5, 7, 7, 4, 5], 'acc': 18.833333282470704}
+05/31 07:03:35 AM Test: [ 0/19]	Time  0.194 ( 0.194)	Loss 1.8015e+00 (1.8015e+00)	Acc  25.00 ( 25.00)
+05/31 07:03:36 AM {'net_id': 'net_evo_0_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 67.40688, 'params': 11.409774, 'loss': 1.8057155672709146, 'resolution': [27, 18], 'width': [16, 32, 32, 48, 120, 120, 168, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 3, 5, 5, 3], 'depth': [2, 2, 5, 7, 4, 6, 8], 'acc': 19.833333282470704}
+05/31 07:03:38 AM Test: [ 0/19]	Time  0.181 ( 0.181)	Loss 1.8309e+00 (1.8309e+00)	Acc  25.00 ( 25.00)
+05/31 07:03:39 AM {'net_id': 'net_evo_0_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 80.237464, 'params': 18.55027, 'loss': 1.8049906667073568, 'resolution': [27, 18], 'width': [24, 24, 32, 72, 80, 192, 168, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 5, 3, 5, 6], 'depth': [2, 2, 3, 4, 5, 7, 7], 'acc': 18.99999994913737}
+05/31 07:03:42 AM Test: [ 0/19]	Time  0.189 ( 0.189)	Loss 1.8096e+00 (1.8096e+00)	Acc  31.25 ( 31.25)
+05/31 07:03:42 AM {'net_id': 'net_evo_0_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 58.257008, 'params': 15.085814, 'loss': 1.7999619118372598, 'resolution': [27, 18], 'width': [16, 32, 24, 64, 64, 144, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 5, 3, 6, 6], 'depth': [1, 2, 3, 6, 5, 7, 6], 'acc': 18.833333333333332}
+05/31 07:03:45 AM Test: [ 0/19]	Time  0.181 ( 0.181)	Loss 1.8026e+00 (1.8026e+00)	Acc  31.25 ( 31.25)
+05/31 07:03:46 AM {'net_id': 'net_evo_0_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 81.620912, 'params': 18.547822, 'loss': 1.790234948794047, 'resolution': [27, 18], 'width': [24, 32, 24, 72, 96, 168, 192, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 4, 4, 3, 6], 'depth': [2, 3, 3, 3, 7, 5, 7], 'acc': 19.999999974568684}
+05/31 07:03:48 AM Test: [ 0/19]	Time  0.190 ( 0.190)	Loss 1.7910e+00 (1.7910e+00)	Acc  34.38 ( 34.38)
+05/31 07:03:49 AM {'net_id': 'net_evo_0_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 62.77664, 'params': 9.844326, 'loss': 1.785883935292562, 'resolution': [27, 18], 'width': [24, 32, 24, 64, 120, 168, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 4, 3, 3, 3], 'depth': [1, 4, 5, 3, 7, 5, 7], 'acc': 21.166666641235352}
+05/31 07:03:52 AM Test: [ 0/19]	Time  0.194 ( 0.194)	Loss 1.8227e+00 (1.8227e+00)	Acc  21.88 ( 21.88)
+05/31 07:03:53 AM {'net_id': 'net_evo_0_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 64.735744, 'params': 14.120134, 'loss': 1.7965877787272135, 'resolution': [27, 18], 'width': [16, 32, 24, 40, 120, 192, 192, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 3], 'depth': [2, 5, 4, 4, 4, 8, 9], 'acc': 19.33333330790202}
+05/31 07:03:56 AM Test: [ 0/19]	Time  0.196 ( 0.196)	Loss 1.8751e+00 (1.8751e+00)	Acc  28.12 ( 28.12)
+05/31 07:03:56 AM {'net_id': 'net_evo_0_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 62.201952, 'params': 13.143406, 'loss': 1.8297200504938762, 'resolution': [27, 18], 'width': [24, 24, 32, 40, 72, 192, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 4, 5, 3, 3], 'depth': [2, 5, 4, 4, 4, 8, 8], 'acc': 19.666666641235352}
+05/31 07:03:59 AM Test: [ 0/19]	Time  0.187 ( 0.187)	Loss 1.7845e+00 (1.7845e+00)	Acc  34.38 ( 34.38)
+05/31 07:04:00 AM {'net_id': 'net_evo_0_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 49.091968, 'params': 13.858694, 'loss': 1.783963360786438, 'resolution': [27, 18], 'width': [24, 32, 24, 40, 72, 104, 192, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 4, 3, 4, 6], 'depth': [1, 4, 3, 4, 7, 7, 7], 'acc': 20.333333282470704}
+05/31 07:04:02 AM Test: [ 0/19]	Time  0.183 ( 0.183)	Loss 1.7919e+00 (1.7919e+00)	Acc  25.00 ( 25.00)
+05/31 07:04:03 AM {'net_id': 'net_evo_1_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 55.504936, 'params': 12.61019, 'loss': 1.8081233135859172, 'resolution': [27, 18], 'width': [24, 32, 32, 56, 96, 96, 224, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 5, 5, 3, 6], 'depth': [1, 2, 3, 3, 7, 5, 6], 'acc': 19.833333282470704}
+05/31 07:04:05 AM Test: [ 0/19]	Time  0.180 ( 0.180)	Loss 1.8296e+00 (1.8296e+00)	Acc  28.12 ( 28.12)
+05/31 07:04:06 AM {'net_id': 'net_evo_1_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 82.461696, 'params': 18.53723, 'loss': 1.8004731480280558, 'resolution': [27, 18], 'width': [24, 32, 24, 64, 120, 168, 192, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 3, 5, 4, 6], 'depth': [1, 2, 3, 3, 7, 7, 5], 'acc': 20.333333333333332}
+05/31 07:04:09 AM Test: [ 0/19]	Time  0.198 ( 0.198)	Loss 1.7651e+00 (1.7651e+00)	Acc  28.12 ( 28.12)
+05/31 07:04:10 AM {'net_id': 'net_evo_1_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 89.276664, 'params': 17.06647, 'loss': 1.8280729103088378, 'resolution': [27, 18], 'width': [16, 32, 32, 64, 104, 144, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 3, 6, 5, 3], 'depth': [2, 5, 5, 4, 4, 8, 9], 'acc': 19.333333333333332}
+05/31 07:04:12 AM Test: [ 0/19]	Time  0.194 ( 0.194)	Loss 1.7623e+00 (1.7623e+00)	Acc  31.25 ( 31.25)
+05/31 07:04:13 AM {'net_id': 'net_evo_1_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 51.961896, 'params': 8.548342, 'loss': 1.7949753777186075, 'resolution': [27, 18], 'width': [16, 32, 32, 40, 120, 168, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 4, 5, 3], 'depth': [2, 3, 3, 5, 5, 5, 6], 'acc': 19.83333330790202}
+05/31 07:04:16 AM Test: [ 0/19]	Time  0.196 ( 0.196)	Loss 1.8412e+00 (1.8412e+00)	Acc  31.25 ( 31.25)
+05/31 07:04:17 AM {'net_id': 'net_evo_1_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 105.108576, 'params': 25.086318, 'loss': 1.8078485933939616, 'resolution': [27, 18], 'width': [24, 32, 32, 64, 120, 168, 168, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 4, 5, 4, 6], 'depth': [1, 2, 3, 5, 6, 7, 9], 'acc': 19.833333333333332}
+05/31 07:04:20 AM Test: [ 0/19]	Time  0.195 ( 0.195)	Loss 1.8923e+00 (1.8923e+00)	Acc  15.62 ( 15.62)
+05/31 07:04:20 AM {'net_id': 'net_evo_1_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 71.853784, 'params': 14.166862, 'loss': 1.8351477193832397, 'resolution': [27, 18], 'width': [16, 24, 24, 72, 96, 168, 192, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 4, 5, 3], 'depth': [2, 4, 3, 6, 6, 6, 8], 'acc': 18.999999974568684}
+05/31 07:04:23 AM Test: [ 0/19]	Time  0.186 ( 0.186)	Loss 1.7708e+00 (1.7708e+00)	Acc  31.25 ( 31.25)
+05/31 07:04:24 AM {'net_id': 'net_evo_1_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 37.090704, 'params': 8.248838, 'loss': 1.7954174852371216, 'resolution': [27, 18], 'width': [24, 32, 24, 40, 72, 104, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 3], 'depth': [1, 4, 5, 4, 3, 7, 9], 'acc': 20.166666615804036}
+05/31 07:04:27 AM Test: [ 0/19]	Time  0.196 ( 0.196)	Loss 1.7988e+00 (1.7988e+00)	Acc  21.88 ( 21.88)
+05/31 07:04:28 AM {'net_id': 'net_evo_1_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 82.831232, 'params': 12.514766, 'loss': 1.782106811205546, 'resolution': [27, 18], 'width': [24, 32, 24, 64, 120, 168, 168, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 4, 3, 4, 3], 'depth': [1, 4, 5, 7, 6, 5, 9], 'acc': 19.833333282470704}
+05/31 07:04:30 AM Test: [ 0/19]	Time  0.190 ( 0.190)	Loss 1.8238e+00 (1.8238e+00)	Acc  31.25 ( 31.25)
+05/31 07:04:31 AM {'net_id': 'net_evo_1_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 49.948448, 'params': 10.270998, 'loss': 1.8400667063395182, 'resolution': [27, 18], 'width': [16, 32, 24, 64, 64, 168, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 4, 3, 5, 3], 'depth': [1, 4, 3, 3, 7, 4, 7], 'acc': 16.666666641235352}
+05/31 07:04:34 AM Test: [ 0/19]	Time  0.192 ( 0.192)	Loss 1.7894e+00 (1.7894e+00)	Acc  31.25 ( 31.25)
+05/31 07:04:34 AM {'net_id': 'net_evo_1_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 86.742024, 'params': 20.43315, 'loss': 1.7875870450337727, 'resolution': [27, 18], 'width': [16, 24, 32, 72, 96, 168, 192, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 4, 5, 6], 'depth': [2, 3, 4, 6, 4, 6, 8], 'acc': 20.333333333333332}
+05/31 07:04:37 AM Test: [ 0/19]	Time  0.201 ( 0.201)	Loss 1.7327e+00 (1.7327e+00)	Acc  28.12 ( 28.12)
+05/31 07:04:37 AM {'net_id': 'net_evo_2_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 67.126864, 'params': 11.316078, 'loss': 1.7927242930730183, 'resolution': [27, 18], 'width': [16, 24, 24, 72, 120, 104, 192, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 4, 3, 3, 6], 'depth': [2, 2, 5, 3, 7, 5, 6], 'acc': 21.5}
+05/31 07:04:41 AM Test: [ 0/19]	Time  0.204 ( 0.204)	Loss 1.8617e+00 (1.8617e+00)	Acc  21.88 ( 21.88)
+05/31 07:04:42 AM {'net_id': 'net_evo_2_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 80.776896, 'params': 18.59011, 'loss': 1.8026730426152546, 'resolution': [27, 18], 'width': [24, 32, 32, 32, 96, 192, 192, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 3, 5, 3, 6], 'depth': [2, 2, 3, 7, 7, 6, 8], 'acc': 19.333333333333332}
+05/31 07:04:44 AM Test: [ 0/19]	Time  0.194 ( 0.194)	Loss 1.8235e+00 (1.8235e+00)	Acc  25.00 ( 25.00)
+05/31 07:04:45 AM {'net_id': 'net_evo_2_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 80.906712, 'params': 20.105486, 'loss': 1.8018518845240274, 'resolution': [27, 18], 'width': [16, 32, 32, 40, 80, 168, 192, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 5, 6, 4, 6], 'depth': [2, 2, 4, 5, 6, 6, 9], 'acc': 19.0}
+05/31 07:04:47 AM Test: [ 0/19]	Time  0.181 ( 0.181)	Loss 1.7688e+00 (1.7688e+00)	Acc  31.25 ( 31.25)
+05/31 07:04:48 AM {'net_id': 'net_evo_2_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 46.907472, 'params': 10.541022, 'loss': 1.8126044527689615, 'resolution': [27, 18], 'width': [16, 24, 32, 48, 64, 144, 192, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 3, 5, 4, 3], 'depth': [2, 4, 3, 3, 4, 6, 7], 'acc': 21.166666641235352}
+05/31 07:04:51 AM Test: [ 0/19]	Time  0.196 ( 0.196)	Loss 1.8643e+00 (1.8643e+00)	Acc  25.00 ( 25.00)
+05/31 07:04:52 AM {'net_id': 'net_evo_2_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 77.052824, 'params': 20.385806, 'loss': 1.8099859619140626, 'resolution': [27, 18], 'width': [16, 24, 32, 48, 88, 144, 144, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 3, 3, 6, 6], 'depth': [2, 5, 5, 6, 3, 7, 9], 'acc': 19.666666615804036}
+05/31 07:04:55 AM Test: [ 0/19]	Time  0.192 ( 0.192)	Loss 1.7594e+00 (1.7594e+00)	Acc  37.50 ( 37.50)
+05/31 07:04:55 AM {'net_id': 'net_evo_2_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 54.753824, 'params': 17.507302, 'loss': 1.7930673917134603, 'resolution': [27, 18], 'width': [24, 32, 24, 40, 72, 104, 224, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 6], 'depth': [1, 4, 4, 4, 3, 7, 9], 'acc': 21.166666641235352}
+05/31 07:04:58 AM Test: [ 0/19]	Time  0.185 ( 0.185)	Loss 1.8885e+00 (1.8885e+00)	Acc  28.12 ( 28.12)
+05/31 07:04:59 AM {'net_id': 'net_evo_2_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 55.315752, 'params': 11.89659, 'loss': 1.8343273401260376, 'resolution': [27, 18], 'width': [16, 24, 24, 56, 64, 168, 192, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 4, 5, 3], 'depth': [1, 3, 4, 6, 6, 4, 8], 'acc': 20.666666666666668}
+05/31 07:05:02 AM Test: [ 0/19]	Time  0.196 ( 0.196)	Loss 1.7220e+00 (1.7220e+00)	Acc  40.62 ( 40.62)
+05/31 07:05:02 AM {'net_id': 'net_evo_2_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 84.431312, 'params': 23.661294, 'loss': 1.7966370328267416, 'resolution': [27, 18], 'width': [24, 32, 24, 64, 120, 104, 224, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 6], 'depth': [1, 4, 4, 4, 3, 7, 9], 'acc': 21.166666615804036}
+05/31 07:05:05 AM Test: [ 0/19]	Time  0.200 ( 0.200)	Loss 1.8122e+00 (1.8122e+00)	Acc  21.88 ( 21.88)
+05/31 07:05:06 AM {'net_id': 'net_evo_2_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 52.76176, 'params': 14.896614, 'loss': 1.7940091149012247, 'resolution': [27, 18], 'width': [16, 32, 24, 40, 72, 104, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 6], 'depth': [1, 4, 4, 7, 3, 7, 9], 'acc': 19.49999994913737}
+05/31 07:05:09 AM Test: [ 0/19]	Time  0.193 ( 0.193)	Loss 1.8438e+00 (1.8438e+00)	Acc  28.12 ( 28.12)
+05/31 07:05:10 AM {'net_id': 'net_evo_2_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 108.43164, 'params': 23.652022, 'loss': 1.8001239824295043, 'resolution': [27, 18], 'width': [16, 32, 24, 64, 120, 192, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 5, 3, 4, 6], 'depth': [1, 3, 5, 6, 6, 6, 9], 'acc': 20.49999994913737}
+05/31 07:05:13 AM Test: [ 0/19]	Time  0.195 ( 0.195)	Loss 1.7967e+00 (1.7967e+00)	Acc  25.00 ( 25.00)
+05/31 07:05:13 AM {'net_id': 'net_evo_3_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 64.409288, 'params': 13.543526, 'loss': 1.7977688042322795, 'resolution': [27, 18], 'width': [16, 24, 32, 40, 80, 192, 192, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 3, 6, 5, 3], 'depth': [2, 3, 3, 7, 4, 6, 8], 'acc': 20.666666615804036}
+05/31 07:05:16 AM Test: [ 0/19]	Time  0.196 ( 0.196)	Loss 1.7651e+00 (1.7651e+00)	Acc  21.88 ( 21.88)
+05/31 07:05:17 AM {'net_id': 'net_evo_3_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 64.235632, 'params': 9.164326, 'loss': 1.8086247380574545, 'resolution': [27, 18], 'width': [24, 32, 24, 40, 120, 96, 168, 192, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 4, 5, 4, 3], 'depth': [1, 5, 5, 6, 7, 5, 7], 'acc': 20.5}
+05/31 07:05:19 AM Test: [ 0/19]	Time  0.183 ( 0.183)	Loss 1.7974e+00 (1.7974e+00)	Acc  31.25 ( 31.25)
+05/31 07:05:20 AM {'net_id': 'net_evo_3_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 78.320528, 'params': 20.17743, 'loss': 1.8511084763209025, 'resolution': [27, 18], 'width': [16, 24, 32, 48, 120, 144, 224, 192, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 4, 6, 6, 6], 'depth': [1, 2, 3, 5, 3, 7, 5], 'acc': 21.0}
+05/31 07:05:23 AM Test: [ 0/19]	Time  0.191 ( 0.191)	Loss 1.8232e+00 (1.8232e+00)	Acc  31.25 ( 31.25)
+05/31 07:05:24 AM {'net_id': 'net_evo_3_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 85.29888, 'params': 15.928542, 'loss': 1.8084431838989259, 'resolution': [27, 18], 'width': [16, 32, 32, 56, 64, 192, 168, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 4, 6, 5, 3], 'depth': [2, 2, 5, 5, 6, 5, 8], 'acc': 18.99999994913737}
+05/31 07:05:26 AM Test: [ 0/19]	Time  0.189 ( 0.189)	Loss 1.8024e+00 (1.8024e+00)	Acc  34.38 ( 34.38)
+05/31 07:05:27 AM {'net_id': 'net_evo_3_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 64.346696, 'params': 17.476254, 'loss': 1.808932852745056, 'resolution': [27, 18], 'width': [24, 32, 32, 40, 72, 168, 224, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 5, 4, 6, 3], 'depth': [1, 5, 3, 3, 4, 6, 9], 'acc': 19.99999994913737}
+05/31 07:05:29 AM Test: [ 0/19]	Time  0.177 ( 0.177)	Loss 1.7622e+00 (1.7622e+00)	Acc  43.75 ( 43.75)
+05/31 07:05:30 AM {'net_id': 'net_evo_3_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 50.917104, 'params': 8.708334, 'loss': 1.818365699450175, 'resolution': [27, 18], 'width': [16, 24, 24, 72, 120, 104, 192, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 3, 4, 5, 3, 3], 'depth': [1, 2, 3, 3, 6, 5, 6], 'acc': 21.5}
+05/31 07:05:33 AM Test: [ 0/19]	Time  0.191 ( 0.191)	Loss 1.7220e+00 (1.7220e+00)	Acc  40.62 ( 40.62)
+05/31 07:05:34 AM {'net_id': 'net_evo_3_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 84.431312, 'params': 23.661294, 'loss': 1.7966370328267416, 'resolution': [27, 18], 'width': [24, 32, 24, 64, 120, 104, 224, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 6], 'depth': [1, 4, 4, 4, 3, 7, 9], 'acc': 21.166666615804036}
+05/31 07:05:36 AM Test: [ 0/19]	Time  0.206 ( 0.206)	Loss 1.9711e+00 (1.9711e+00)	Acc  18.75 ( 18.75)
+05/31 07:05:37 AM {'net_id': 'net_evo_3_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 102.661312, 'params': 20.130102, 'loss': 1.8573342498143515, 'resolution': [27, 18], 'width': [16, 24, 24, 72, 120, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 5, 5, 4, 6], 'depth': [2, 2, 3, 6, 6, 6, 6], 'acc': 17.166666641235352}
+05/31 07:05:40 AM Test: [ 0/19]	Time  0.189 ( 0.189)	Loss 1.7963e+00 (1.7963e+00)	Acc  25.00 ( 25.00)
+05/31 07:05:40 AM {'net_id': 'net_evo_3_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 73.863768, 'params': 10.632086, 'loss': 1.794339648882548, 'resolution': [27, 18], 'width': [24, 32, 24, 72, 120, 192, 144, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 5, 3, 3, 3], 'depth': [1, 3, 5, 3, 7, 6, 7], 'acc': 22.83333330790202}
+05/31 07:05:43 AM Test: [ 0/19]	Time  0.190 ( 0.190)	Loss 1.7722e+00 (1.7722e+00)	Acc  34.38 ( 34.38)
+05/31 07:05:44 AM {'net_id': 'net_evo_3_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 84.323496, 'params': 23.034894, 'loss': 1.7926909764607748, 'resolution': [27, 18], 'width': [24, 32, 32, 64, 120, 168, 224, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 4, 5, 6], 'depth': [1, 4, 4, 4, 3, 7, 8], 'acc': 22.49999994913737}
+####    Fine Tuning of Isabella     ####
+05/31 07:05:48 AM val:epoch[0]——acc:0.22833333
+05/31 07:05:48 AM save best model!
+05/31 07:05:48 AM Training lr 0.0001
+05/31 07:06:07 AM val:epoch[1]——acc:0.21000000
+05/31 07:06:07 AM Training lr 5.05e-05
+
+=== Predicting ===
+  Allotted compute time remaining: ~43m,36s
+
+========== Dataset  Chester   =============================================
+  Metadata:
+   - num_classes         : 10
+   - input_shape         : [5000, 3, 32, 32]
+   - codename            : Chester
+   - benchmark           : 57.5
+   - time_remaining      : 2614.4120848178864
+   - dataset_index       : 1
+   - dataset_total_number: 3
+
+=== Processing Data ===
+  Allotted compute time remaining: ~43m,34s
+Experiment dir : ./results
+
+=== Performing NAS ===
+  Allotted compute time remaining: ~43m,34s
+
+=== Training ===
+  Allotted compute time remaining: ~43m,33s
+####    Train Supernet of Chester     ####
+05/31 07:06:28 AM Training lr 0.0001
+05/31 07:06:29 AM Epoch: [0][  0/156]	Time  1.307 ( 1.307)	Data  0.179 ( 0.179)	Loss 2.3024e+00 (2.3024e+00)	Acc  12.50 ( 12.50)
+05/31 07:07:11 AM Epoch: [0][ 78/156]	Time  0.500 ( 0.542)	Data  0.001 ( 0.004)	Loss 2.1602e+00 (2.1919e+00)	Acc  34.38 ( 22.55)
+05/31 07:07:49 AM Test: [ 0/32]	Time  0.177 ( 0.177)	Loss 1.8610e+00 (1.8610e+00)	Acc  21.88 ( 21.88)
+05/31 07:07:49 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 0, 'flops': 21.01664, 'params': 3.703098, 'loss': 1.9815377922058106, 'resolution': [28, 28], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 24.3}
+05/31 07:07:53 AM Test: [ 0/32]	Time  0.216 ( 0.216)	Loss 1.8533e+00 (1.8533e+00)	Acc  25.00 ( 25.00)
+05/31 07:07:55 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 0, 'flops': 437.090368, 'params': 39.771568, 'loss': 1.9244993801116943, 'resolution': [40, 40], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 28.2}
+05/31 07:07:56 AM save best supernet_model!
+05/31 07:07:56 AM Training lr 0.03258264382212907
+05/31 07:07:56 AM Epoch: [1][  0/156]	Time  0.633 ( 0.633)	Data  0.143 ( 0.143)	Loss 1.7639e+00 (1.7639e+00)	Acc  21.88 ( 21.88)
+05/31 07:08:32 AM Epoch: [1][ 78/156]	Time  0.455 ( 0.453)	Data  0.001 ( 0.003)	Loss 1.9990e+00 (1.8487e+00)	Acc  37.50 ( 29.94)
+05/31 07:09:07 AM Test: [ 0/32]	Time  0.183 ( 0.183)	Loss 1.9132e+00 (1.9132e+00)	Acc  18.75 ( 18.75)
+05/31 07:09:08 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 1, 'flops': 21.01664, 'params': 3.703098, 'loss': 2.060410924911499, 'resolution': [28, 28], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 20.1}
+05/31 07:09:12 AM Test: [ 0/32]	Time  0.225 ( 0.225)	Loss 1.8996e+00 (1.8996e+00)	Acc  43.75 ( 43.75)
+05/31 07:09:13 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 1, 'flops': 437.090368, 'params': 39.771568, 'loss': 1.956899929046631, 'resolution': [40, 40], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 28.7}
+05/31 07:09:13 AM Training lr 0.06033071676240449
+05/31 07:09:14 AM Epoch: [2][  0/156]	Time  0.605 ( 0.605)	Data  0.161 ( 0.161)	Loss 1.8218e+00 (1.8218e+00)	Acc  18.75 ( 18.75)
+05/31 07:09:47 AM Epoch: [2][ 78/156]	Time  0.425 ( 0.435)	Data  0.002 ( 0.003)	Loss 1.8693e+00 (1.7907e+00)	Acc  18.75 ( 31.33)
+05/31 07:10:22 AM Test: [ 0/32]	Time  0.178 ( 0.178)	Loss 1.7857e+00 (1.7857e+00)	Acc  18.75 ( 18.75)
+05/31 07:10:23 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 2, 'flops': 21.01664, 'params': 3.703098, 'loss': 1.8543315334320067, 'resolution': [28, 28], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 30.0}
+05/31 07:10:27 AM Test: [ 0/32]	Time  0.208 ( 0.208)	Loss 1.8360e+00 (1.8360e+00)	Acc  31.25 ( 31.25)
+05/31 07:10:28 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 2, 'flops': 437.090368, 'params': 39.771568, 'loss': 1.9711694383621217, 'resolution': [40, 40], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 34.5}
+05/31 07:10:29 AM save best supernet_model!
+05/31 07:10:29 AM Training lr 0.07938926261462366
+05/31 07:10:30 AM Epoch: [3][  0/156]	Time  0.590 ( 0.590)	Data  0.150 ( 0.150)	Loss 1.5507e+00 (1.5507e+00)	Acc  43.75 ( 43.75)
+05/31 07:11:03 AM Epoch: [3][ 78/156]	Time  0.392 ( 0.426)	Data  0.001 ( 0.003)	Loss 1.6542e+00 (1.7174e+00)	Acc  40.62 ( 37.46)
+05/31 07:11:37 AM Test: [ 0/32]	Time  0.185 ( 0.185)	Loss 1.7538e+00 (1.7538e+00)	Acc  21.88 ( 21.88)
+05/31 07:11:38 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 3, 'flops': 21.01664, 'params': 3.703098, 'loss': 1.7291290283203125, 'resolution': [28, 28], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 34.5}
+05/31 07:11:42 AM Test: [ 0/32]	Time  0.222 ( 0.222)	Loss 1.4809e+00 (1.4809e+00)	Acc  40.62 ( 40.62)
+05/31 07:11:44 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 3, 'flops': 437.090368, 'params': 39.771568, 'loss': 1.5582264566421509, 'resolution': [40, 40], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 42.6}
+05/31 07:11:45 AM save best supernet_model!
+05/31 07:11:45 AM Training lr 0.06545084971874737
+05/31 07:11:45 AM Epoch: [4][  0/156]	Time  0.642 ( 0.642)	Data  0.158 ( 0.158)	Loss 1.5111e+00 (1.5111e+00)	Acc  50.00 ( 50.00)
+05/31 07:12:18 AM Epoch: [4][ 78/156]	Time  0.384 ( 0.421)	Data  0.001 ( 0.003)	Loss 1.5402e+00 (1.5138e+00)	Acc  40.62 ( 44.54)
+05/31 07:12:52 AM Test: [ 0/32]	Time  0.177 ( 0.177)	Loss 1.5581e+00 (1.5581e+00)	Acc  34.38 ( 34.38)
+05/31 07:12:53 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 4, 'flops': 21.01664, 'params': 3.703098, 'loss': 1.5528574571609497, 'resolution': [28, 28], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 43.1}
+05/31 07:12:57 AM Test: [ 0/32]	Time  0.226 ( 0.226)	Loss 1.3257e+00 (1.3257e+00)	Acc  50.00 ( 50.00)
+05/31 07:12:58 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 4, 'flops': 437.090368, 'params': 39.771568, 'loss': 1.3592225484848022, 'resolution': [40, 40], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 51.9}
+05/31 07:12:59 AM save best supernet_model!
+05/31 07:12:59 AM Training lr 0.05
+05/31 07:13:00 AM Epoch: [5][  0/156]	Time  0.593 ( 0.593)	Data  0.148 ( 0.148)	Loss 1.3172e+00 (1.3172e+00)	Acc  50.00 ( 50.00)
+05/31 07:13:33 AM Epoch: [5][ 78/156]	Time  0.407 ( 0.424)	Data  0.001 ( 0.003)	Loss 1.2814e+00 (1.4113e+00)	Acc  68.75 ( 52.33)
+05/31 07:14:07 AM Test: [ 0/32]	Time  0.182 ( 0.182)	Loss 1.2108e+00 (1.2108e+00)	Acc  40.62 ( 40.62)
+05/31 07:14:07 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 5, 'flops': 21.01664, 'params': 3.703098, 'loss': 1.4541040201187134, 'resolution': [28, 28], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 46.3}
+05/31 07:14:11 AM Test: [ 0/32]	Time  0.212 ( 0.212)	Loss 9.9672e-01 (9.9672e-01)	Acc  56.25 ( 56.25)
+05/31 07:14:13 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 5, 'flops': 437.090368, 'params': 39.771568, 'loss': 1.320823251724243, 'resolution': [40, 40], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 52.8}
+05/31 07:14:13 AM save best supernet_model!
+05/31 07:14:13 AM Training lr 0.03454915028125263
+05/31 07:14:14 AM Epoch: [6][  0/156]	Time  0.627 ( 0.627)	Data  0.151 ( 0.151)	Loss 1.0542e+00 (1.0542e+00)	Acc  62.50 ( 62.50)
+05/31 07:14:47 AM Epoch: [6][ 78/156]	Time  0.428 ( 0.421)	Data  0.001 ( 0.003)	Loss 1.2009e+00 (1.2915e+00)	Acc  56.25 ( 59.57)
+05/31 07:15:21 AM Test: [ 0/32]	Time  0.256 ( 0.256)	Loss 1.2436e+00 (1.2436e+00)	Acc  43.75 ( 43.75)
+05/31 07:15:22 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 6, 'flops': 21.01664, 'params': 3.703098, 'loss': 1.3398260474205017, 'resolution': [28, 28], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 51.2}
+05/31 07:15:26 AM Test: [ 0/32]	Time  0.211 ( 0.211)	Loss 1.0555e+00 (1.0555e+00)	Acc  56.25 ( 56.25)
+05/31 07:15:27 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 6, 'flops': 437.090368, 'params': 39.771568, 'loss': 1.136158133983612, 'resolution': [40, 40], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 60.3}
+05/31 07:15:28 AM save best supernet_model!
+05/31 07:15:28 AM Training lr 0.02061073738537635
+05/31 07:15:29 AM Epoch: [7][  0/156]	Time  0.623 ( 0.623)	Data  0.153 ( 0.153)	Loss 1.1185e+00 (1.1185e+00)	Acc  68.75 ( 68.75)
+05/31 07:16:01 AM Epoch: [7][ 78/156]	Time  0.399 ( 0.420)	Data  0.002 ( 0.003)	Loss 1.1632e+00 (1.1188e+00)	Acc  59.38 ( 67.48)
+05/31 07:16:35 AM Test: [ 0/32]	Time  0.179 ( 0.179)	Loss 1.3097e+00 (1.3097e+00)	Acc  53.12 ( 53.12)
+05/31 07:16:36 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 7, 'flops': 21.01664, 'params': 3.703098, 'loss': 1.2648664255142212, 'resolution': [28, 28], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 54.8}
+05/31 07:16:40 AM Test: [ 0/32]	Time  0.211 ( 0.211)	Loss 1.1660e+00 (1.1660e+00)	Acc  56.25 ( 56.25)
+05/31 07:16:41 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 7, 'flops': 437.090368, 'params': 39.771568, 'loss': 1.0274251952171325, 'resolution': [40, 40], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 62.3}
+05/31 07:16:42 AM save best supernet_model!
+05/31 07:16:42 AM Training lr 0.009549150281252633
+05/31 07:16:43 AM Epoch: [8][  0/156]	Time  0.612 ( 0.612)	Data  0.153 ( 0.153)	Loss 1.1746e+00 (1.1746e+00)	Acc  81.25 ( 81.25)
+05/31 07:17:15 AM Epoch: [8][ 78/156]	Time  0.389 ( 0.419)	Data  0.002 ( 0.003)	Loss 8.6990e-01 (1.0060e+00)	Acc  81.25 ( 74.80)
+05/31 07:17:49 AM Test: [ 0/32]	Time  0.180 ( 0.180)	Loss 1.1288e+00 (1.1288e+00)	Acc  53.12 ( 53.12)
+05/31 07:17:50 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 8, 'flops': 21.01664, 'params': 3.703098, 'loss': 1.2229128341674804, 'resolution': [28, 28], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 56.1}
+05/31 07:17:54 AM Test: [ 0/32]	Time  0.210 ( 0.210)	Loss 9.8365e-01 (9.8365e-01)	Acc  59.38 ( 59.38)
+05/31 07:17:55 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 8, 'flops': 437.090368, 'params': 39.771568, 'loss': 0.9825480532646179, 'resolution': [40, 40], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 64.9}
+05/31 07:17:56 AM save best supernet_model!
+05/31 07:17:56 AM Training lr 0.0024471741852423235
+05/31 07:17:56 AM Epoch: [9][  0/156]	Time  0.556 ( 0.556)	Data  0.146 ( 0.146)	Loss 9.4171e-01 (9.4171e-01)	Acc  71.88 ( 71.88)
+05/31 07:18:29 AM Epoch: [9][ 78/156]	Time  0.399 ( 0.418)	Data  0.001 ( 0.003)	Loss 9.8157e-01 (9.6761e-01)	Acc  71.88 ( 79.67)
+05/31 07:19:03 AM Test: [ 0/32]	Time  0.185 ( 0.185)	Loss 1.1159e+00 (1.1159e+00)	Acc  50.00 ( 50.00)
+05/31 07:19:04 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 9, 'flops': 21.01664, 'params': 3.703098, 'loss': 1.217015580177307, 'resolution': [28, 28], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 56.3}
+05/31 07:19:07 AM Test: [ 0/32]	Time  0.221 ( 0.221)	Loss 9.7870e-01 (9.7870e-01)	Acc  62.50 ( 62.50)
+05/31 07:19:09 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 9, 'flops': 437.090368, 'params': 39.771568, 'loss': 0.9970402503013611, 'resolution': [40, 40], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 66.6}
+05/31 07:19:10 AM save best supernet_model!
+####    Search of Chester    ####
+05/31 07:19:13 AM Test: [ 0/32]	Time  0.197 ( 0.197)	Loss 7.5490e-01 (7.5490e-01)	Acc  68.75 ( 68.75)
+05/31 07:19:14 AM {'net_id': 'net_evo_0_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 62.202112, 'params': 9.146634, 'loss': 1.042183228969574, 'resolution': [32, 32], 'width': [16, 32, 24, 40, 72, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 4, 5, 4, 3], 'depth': [1, 5, 3, 3, 3, 5, 6], 'acc': 63.2}
+05/31 07:19:17 AM Test: [ 0/32]	Time  0.206 ( 0.206)	Loss 9.0672e-01 (9.0672e-01)	Acc  65.62 ( 65.62)
+05/31 07:19:18 AM {'net_id': 'net_evo_0_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 67.717856, 'params': 12.875946, 'loss': 1.120133966445923, 'resolution': [32, 32], 'width': [16, 24, 32, 32, 80, 120, 192, 192, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 4, 6, 5, 3], 'depth': [2, 2, 4, 3, 7, 6, 9], 'acc': 60.5}
+05/31 07:19:21 AM Test: [ 0/32]	Time  0.198 ( 0.198)	Loss 7.9461e-01 (7.9461e-01)	Acc  68.75 ( 68.75)
+05/31 07:19:22 AM {'net_id': 'net_evo_0_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 152.641152, 'params': 25.03185, 'loss': 1.0929233069419861, 'resolution': [32, 32], 'width': [24, 24, 32, 72, 104, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 5, 5, 4, 6], 'depth': [1, 3, 3, 6, 6, 6, 9], 'acc': 61.5}
+05/31 07:19:25 AM Test: [ 0/32]	Time  0.202 ( 0.202)	Loss 9.6284e-01 (9.6284e-01)	Acc  56.25 ( 56.25)
+05/31 07:19:26 AM {'net_id': 'net_evo_0_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 88.302784, 'params': 13.14589, 'loss': 1.1242687425613402, 'resolution': [32, 32], 'width': [24, 24, 32, 40, 72, 192, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 4, 5, 3, 3], 'depth': [2, 5, 4, 4, 4, 8, 8], 'acc': 59.7}
+05/31 07:19:29 AM Test: [ 0/32]	Time  0.196 ( 0.196)	Loss 9.5197e-01 (9.5197e-01)	Acc  59.38 ( 59.38)
+05/31 07:19:30 AM {'net_id': 'net_evo_0_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 83.349824, 'params': 10.911146, 'loss': 1.1390734057426453, 'resolution': [32, 32], 'width': [24, 24, 32, 56, 72, 144, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 4, 4, 3, 3], 'depth': [2, 3, 5, 3, 5, 8, 9], 'acc': 59.4}
+05/31 07:19:33 AM Test: [ 0/32]	Time  0.203 ( 0.203)	Loss 7.9895e-01 (7.9895e-01)	Acc  68.75 ( 68.75)
+05/31 07:19:35 AM {'net_id': 'net_evo_0_5', 'mode': 'evaluate', 'epoch': 0, 'flops': 119.308192, 'params': 11.337674, 'loss': 1.0401858468055725, 'resolution': [32, 32], 'width': [16, 32, 24, 64, 120, 104, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 4, 3, 4, 3], 'depth': [1, 4, 5, 7, 6, 5, 9], 'acc': 62.9}
+05/31 07:19:38 AM Test: [ 0/32]	Time  0.227 ( 0.227)	Loss 8.4873e-01 (8.4873e-01)	Acc  62.50 ( 62.50)
+05/31 07:19:39 AM {'net_id': 'net_evo_0_6', 'mode': 'evaluate', 'epoch': 0, 'flops': 62.768544, 'params': 10.309978, 'loss': 1.069053647518158, 'resolution': [32, 32], 'width': [16, 24, 24, 32, 64, 120, 144, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 4, 6, 3, 3], 'depth': [2, 5, 3, 7, 4, 8, 9], 'acc': 62.9}
+05/31 07:19:42 AM Test: [ 0/32]	Time  0.198 ( 0.198)	Loss 8.2076e-01 (8.2076e-01)	Acc  71.88 ( 71.88)
+05/31 07:19:43 AM {'net_id': 'net_evo_0_7', 'mode': 'evaluate', 'epoch': 0, 'flops': 69.82816, 'params': 17.508634, 'loss': 1.069722457408905, 'resolution': [32, 32], 'width': [24, 32, 24, 40, 72, 104, 224, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 6], 'depth': [1, 4, 4, 4, 3, 7, 9], 'acc': 61.3}
+05/31 07:19:46 AM Test: [ 0/32]	Time  0.213 ( 0.213)	Loss 8.2985e-01 (8.2985e-01)	Acc  71.88 ( 71.88)
+05/31 07:19:47 AM {'net_id': 'net_evo_0_8', 'mode': 'evaluate', 'epoch': 0, 'flops': 115.61984, 'params': 14.836882, 'loss': 1.0312971878051758, 'resolution': [32, 32], 'width': [24, 32, 32, 48, 88, 192, 224, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 3, 5, 4, 6, 3], 'depth': [2, 3, 3, 7, 7, 4, 7], 'acc': 62.2}
+05/31 07:19:50 AM Test: [ 0/32]	Time  0.196 ( 0.196)	Loss 8.9920e-01 (8.9920e-01)	Acc  68.75 ( 68.75)
+05/31 07:19:51 AM {'net_id': 'net_evo_0_9', 'mode': 'evaluate', 'epoch': 0, 'flops': 124.977312, 'params': 20.433954, 'loss': 1.0367272620201111, 'resolution': [32, 32], 'width': [16, 24, 32, 72, 96, 168, 192, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 4, 5, 6], 'depth': [2, 3, 4, 6, 4, 6, 8], 'acc': 64.0}
+05/31 07:19:53 AM Test: [ 0/32]	Time  0.193 ( 0.193)	Loss 8.2706e-01 (8.2706e-01)	Acc  75.00 ( 75.00)
+05/31 07:19:55 AM {'net_id': 'net_evo_0_10', 'mode': 'evaluate', 'epoch': 0, 'flops': 117.395552, 'params': 12.503354, 'loss': 1.0488101406097412, 'resolution': [32, 32], 'width': [24, 32, 24, 72, 120, 168, 192, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 4, 5, 3, 3], 'depth': [1, 4, 3, 3, 7, 5, 7], 'acc': 62.3}
+05/31 07:19:57 AM Test: [ 0/32]	Time  0.196 ( 0.196)	Loss 8.6803e-01 (8.6803e-01)	Acc  65.62 ( 65.62)
+05/31 07:19:58 AM {'net_id': 'net_evo_0_11', 'mode': 'evaluate', 'epoch': 0, 'flops': 138.709792, 'params': 20.306498, 'loss': 1.0403134746551514, 'resolution': [32, 32], 'width': [16, 32, 24, 72, 88, 168, 224, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 3, 3, 5, 6], 'depth': [1, 2, 5, 4, 7, 4, 7], 'acc': 62.6}
+05/31 07:20:01 AM Test: [ 0/32]	Time  0.192 ( 0.192)	Loss 7.7679e-01 (7.7679e-01)	Acc  68.75 ( 68.75)
+05/31 07:20:02 AM {'net_id': 'net_evo_0_12', 'mode': 'evaluate', 'epoch': 0, 'flops': 61.408928, 'params': 10.292378, 'loss': 1.078828694343567, 'resolution': [32, 32], 'width': [16, 24, 24, 56, 64, 104, 192, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 3, 4, 5, 5, 3], 'depth': [1, 4, 3, 3, 6, 4, 8], 'acc': 62.6}
+05/31 07:20:04 AM Test: [ 0/32]	Time  0.200 ( 0.200)	Loss 8.7942e-01 (8.7942e-01)	Acc  65.62 ( 65.62)
+05/31 07:20:05 AM {'net_id': 'net_evo_0_13', 'mode': 'evaluate', 'epoch': 0, 'flops': 63.667296, 'params': 11.47973, 'loss': 1.0849057559967041, 'resolution': [32, 32], 'width': [24, 32, 32, 32, 64, 120, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 3, 5, 5, 3], 'depth': [1, 2, 5, 6, 5, 6, 8], 'acc': 61.3}
+05/31 07:20:08 AM Test: [ 0/32]	Time  0.215 ( 0.215)	Loss 8.4542e-01 (8.4542e-01)	Acc  71.88 ( 71.88)
+05/31 07:20:10 AM {'net_id': 'net_evo_0_14', 'mode': 'evaluate', 'epoch': 0, 'flops': 115.226912, 'params': 10.966218, 'loss': 1.0312472949028015, 'resolution': [32, 32], 'width': [24, 32, 32, 56, 104, 120, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 3, 6, 4, 3], 'depth': [2, 3, 5, 7, 5, 7, 9], 'acc': 63.4}
+05/31 07:20:12 AM Test: [ 0/32]	Time  0.196 ( 0.196)	Loss 9.4895e-01 (9.4895e-01)	Acc  56.25 ( 56.25)
+05/31 07:20:14 AM {'net_id': 'net_evo_0_15', 'mode': 'evaluate', 'epoch': 0, 'flops': 77.432064, 'params': 7.610834, 'loss': 1.104372703075409, 'resolution': [32, 32], 'width': [24, 24, 24, 72, 80, 104, 168, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 3, 6, 3, 3], 'depth': [1, 3, 4, 7, 3, 7, 8], 'acc': 60.7}
+05/31 07:20:16 AM Test: [ 0/32]	Time  0.197 ( 0.197)	Loss 8.0959e-01 (8.0959e-01)	Acc  65.62 ( 65.62)
+05/31 07:20:17 AM {'net_id': 'net_evo_0_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 138.894016, 'params': 15.849938, 'loss': 1.031348343372345, 'resolution': [32, 32], 'width': [24, 32, 32, 72, 80, 144, 168, 224, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 5, 4, 6, 6], 'depth': [2, 4, 5, 4, 5, 6, 5], 'acc': 63.7}
+05/31 07:20:20 AM Test: [ 0/32]	Time  0.203 ( 0.203)	Loss 9.5223e-01 (9.5223e-01)	Acc  65.62 ( 65.62)
+05/31 07:20:21 AM {'net_id': 'net_evo_0_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 115.514176, 'params': 9.823842, 'loss': 1.1132173638343812, 'resolution': [32, 32], 'width': [24, 24, 32, 72, 88, 144, 192, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 4, 5, 3, 3], 'depth': [2, 3, 4, 7, 6, 5, 5], 'acc': 60.6}
+05/31 07:20:24 AM Test: [ 0/32]	Time  0.204 ( 0.204)	Loss 8.7470e-01 (8.7470e-01)	Acc  68.75 ( 68.75)
+05/31 07:20:25 AM {'net_id': 'net_evo_0_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 104.702944, 'params': 11.410578, 'loss': 1.0621983275413514, 'resolution': [32, 32], 'width': [16, 32, 32, 48, 120, 120, 168, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 3, 5, 5, 3], 'depth': [2, 2, 5, 7, 4, 6, 8], 'acc': 62.9}
+05/31 07:20:27 AM Test: [ 0/32]	Time  0.202 ( 0.202)	Loss 8.3427e-01 (8.3427e-01)	Acc  71.88 ( 71.88)
+05/31 07:20:29 AM {'net_id': 'net_evo_0_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 138.866208, 'params': 23.770042, 'loss': 1.03324724817276, 'resolution': [32, 32], 'width': [16, 32, 32, 64, 88, 192, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 5, 6, 5, 6], 'depth': [2, 2, 3, 4, 6, 6, 7], 'acc': 63.1}
+05/31 07:20:31 AM Test: [ 0/32]	Time  0.215 ( 0.215)	Loss 9.2121e-01 (9.2121e-01)	Acc  59.38 ( 59.38)
+05/31 07:20:32 AM {'net_id': 'net_evo_0_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 81.09952, 'params': 15.087002, 'loss': 1.1375609712600707, 'resolution': [32, 32], 'width': [16, 32, 24, 64, 64, 144, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 5, 3, 6, 6], 'depth': [1, 2, 3, 6, 5, 7, 6], 'acc': 58.0}
+05/31 07:20:35 AM Test: [ 0/32]	Time  0.210 ( 0.210)	Loss 8.8438e-01 (8.8438e-01)	Acc  65.62 ( 65.62)
+05/31 07:20:36 AM {'net_id': 'net_evo_0_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 115.548192, 'params': 19.781218, 'loss': 1.0416007633209228, 'resolution': [32, 32], 'width': [16, 24, 32, 72, 88, 168, 192, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 3, 5, 6], 'depth': [1, 2, 4, 6, 4, 6, 8], 'acc': 63.6}
+05/31 07:20:39 AM Test: [ 0/32]	Time  0.196 ( 0.196)	Loss 8.5246e-01 (8.5246e-01)	Acc  68.75 ( 68.75)
+05/31 07:20:40 AM {'net_id': 'net_evo_0_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 105.208224, 'params': 17.762122, 'loss': 1.0549160499572754, 'resolution': [32, 32], 'width': [16, 24, 24, 72, 80, 168, 168, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 6, 5, 6], 'depth': [1, 3, 4, 6, 4, 7, 8], 'acc': 63.1}
+05/31 07:20:43 AM Test: [ 0/32]	Time  0.206 ( 0.206)	Loss 1.0332e+00 (1.0332e+00)	Acc  59.38 ( 59.38)
+05/31 07:20:44 AM {'net_id': 'net_evo_0_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 78.310272, 'params': 11.550626, 'loss': 1.1237048754692078, 'resolution': [32, 32], 'width': [24, 24, 24, 40, 80, 192, 192, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 6, 3, 3], 'depth': [2, 5, 4, 4, 4, 8, 8], 'acc': 59.0}
+05/31 07:20:47 AM Test: [ 0/32]	Time  0.209 ( 0.209)	Loss 9.6284e-01 (9.6284e-01)	Acc  56.25 ( 56.25)
+05/31 07:20:48 AM {'net_id': 'net_evo_0_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 88.302784, 'params': 13.14589, 'loss': 1.1242687425613402, 'resolution': [32, 32], 'width': [24, 24, 32, 40, 72, 192, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 4, 5, 3, 3], 'depth': [2, 5, 4, 4, 4, 8, 8], 'acc': 59.7}
+05/31 07:20:51 AM Test: [ 0/32]	Time  0.202 ( 0.202)	Loss 8.9920e-01 (8.9920e-01)	Acc  68.75 ( 68.75)
+05/31 07:20:52 AM {'net_id': 'net_evo_0_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 124.977312, 'params': 20.433954, 'loss': 1.0367272620201111, 'resolution': [32, 32], 'width': [16, 24, 32, 72, 96, 168, 192, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 4, 5, 6], 'depth': [2, 3, 4, 6, 4, 6, 8], 'acc': 64.0}
+05/31 07:20:54 AM Test: [ 0/32]	Time  0.193 ( 0.193)	Loss 8.8535e-01 (8.8535e-01)	Acc  71.88 ( 71.88)
+05/31 07:20:55 AM {'net_id': 'net_evo_1_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 78.018688, 'params': 13.395674, 'loss': 1.0755957140922547, 'resolution': [32, 32], 'width': [16, 24, 32, 56, 80, 96, 224, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 4, 5, 3, 6], 'depth': [1, 2, 3, 3, 7, 5, 7], 'acc': 61.5}
+05/31 07:20:58 AM Test: [ 0/32]	Time  0.195 ( 0.195)	Loss 7.7449e-01 (7.7449e-01)	Acc  78.12 ( 78.12)
+05/31 07:20:59 AM {'net_id': 'net_evo_1_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 111.936576, 'params': 18.258362, 'loss': 1.0525999026298523, 'resolution': [32, 32], 'width': [16, 24, 24, 64, 120, 144, 168, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 5, 5, 4, 6], 'depth': [1, 2, 3, 3, 7, 7, 6], 'acc': 62.4}
+05/31 07:21:02 AM Test: [ 0/32]	Time  0.200 ( 0.200)	Loss 8.3643e-01 (8.3643e-01)	Acc  68.75 ( 68.75)
+05/31 07:21:03 AM {'net_id': 'net_evo_1_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 136.660288, 'params': 17.06881, 'loss': 1.051957751750946, 'resolution': [32, 32], 'width': [16, 32, 32, 64, 104, 144, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 3, 6, 5, 3], 'depth': [2, 5, 5, 4, 4, 8, 9], 'acc': 63.2}
+05/31 07:21:05 AM Test: [ 0/32]	Time  0.196 ( 0.196)	Loss 9.1249e-01 (9.1249e-01)	Acc  62.50 ( 62.50)
+05/31 07:21:06 AM {'net_id': 'net_evo_1_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 84.401408, 'params': 7.869986, 'loss': 1.1288714752197266, 'resolution': [32, 32], 'width': [24, 24, 24, 72, 120, 144, 144, 224, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 3], 'depth': [1, 4, 3, 4, 5, 5, 6], 'acc': 58.8}
+05/31 07:21:09 AM Test: [ 0/32]	Time  0.204 ( 0.204)	Loss 8.5033e-01 (8.5033e-01)	Acc  68.75 ( 68.75)
+05/31 07:21:11 AM {'net_id': 'net_evo_1_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 133.666176, 'params': 25.005042, 'loss': 1.0625122337341308, 'resolution': [32, 32], 'width': [16, 24, 32, 64, 120, 144, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 3, 5, 4, 6], 'depth': [1, 2, 3, 6, 6, 7, 9], 'acc': 63.4}
+05/31 07:21:13 AM Test: [ 0/32]	Time  0.195 ( 0.195)	Loss 9.1938e-01 (9.1938e-01)	Acc  65.62 ( 65.62)
+05/31 07:21:14 AM {'net_id': 'net_evo_1_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 87.549632, 'params': 8.088114, 'loss': 1.0782251009941102, 'resolution': [32, 32], 'width': [24, 32, 24, 72, 80, 144, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 5, 4, 4, 3], 'depth': [2, 5, 3, 4, 3, 6, 5], 'acc': 63.0}
+05/31 07:21:17 AM Test: [ 0/32]	Time  0.212 ( 0.212)	Loss 8.5246e-01 (8.5246e-01)	Acc  68.75 ( 68.75)
+05/31 07:21:18 AM {'net_id': 'net_evo_1_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 105.208224, 'params': 17.762122, 'loss': 1.0549160499572754, 'resolution': [32, 32], 'width': [16, 24, 24, 72, 80, 168, 168, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 6, 5, 6], 'depth': [1, 3, 4, 6, 4, 7, 8], 'acc': 63.1}
+05/31 07:21:21 AM Test: [ 0/32]	Time  0.229 ( 0.229)	Loss 8.5965e-01 (8.5965e-01)	Acc  68.75 ( 68.75)
+05/31 07:21:22 AM {'net_id': 'net_evo_1_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 114.82512, 'params': 14.254562, 'loss': 1.0343038473129273, 'resolution': [32, 32], 'width': [16, 24, 32, 72, 96, 144, 168, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 3, 4, 5, 6], 'depth': [2, 4, 4, 6, 5, 6, 5], 'acc': 64.3}
+05/31 07:21:25 AM Test: [ 0/32]	Time  0.194 ( 0.194)	Loss 8.8170e-01 (8.8170e-01)	Acc  71.88 ( 71.88)
+05/31 07:21:26 AM {'net_id': 'net_evo_1_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 62.454752, 'params': 9.295634, 'loss': 1.0827486510276794, 'resolution': [32, 32], 'width': [24, 24, 24, 40, 72, 192, 168, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 3, 3, 6, 4, 3], 'depth': [1, 5, 4, 3, 3, 7, 6], 'acc': 61.7}
+05/31 07:21:28 AM Test: [ 0/32]	Time  0.199 ( 0.199)	Loss 8.7498e-01 (8.7498e-01)	Acc  62.50 ( 62.50)
+05/31 07:21:29 AM {'net_id': 'net_evo_1_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 94.03936, 'params': 22.469754, 'loss': 1.0903635149002076, 'resolution': [32, 32], 'width': [24, 32, 32, 40, 104, 104, 224, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 6], 'depth': [1, 4, 4, 4, 3, 6, 9], 'acc': 61.4}
+05/31 07:21:32 AM Test: [ 0/32]	Time  0.200 ( 0.200)	Loss 9.2030e-01 (9.2030e-01)	Acc  65.62 ( 65.62)
+05/31 07:21:33 AM {'net_id': 'net_evo_2_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 82.583136, 'params': 10.447338, 'loss': 1.1236252331733703, 'resolution': [32, 32], 'width': [24, 24, 24, 56, 64, 120, 168, 192, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 4, 6, 6, 3], 'depth': [2, 5, 4, 4, 6, 4, 8], 'acc': 60.4}
+05/31 07:21:36 AM Test: [ 0/32]	Time  0.195 ( 0.195)	Loss 8.7006e-01 (8.7006e-01)	Acc  65.62 ( 65.62)
+05/31 07:21:37 AM {'net_id': 'net_evo_2_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 104.557152, 'params': 9.34501, 'loss': 1.0493274116516114, 'resolution': [32, 32], 'width': [24, 32, 24, 40, 120, 168, 144, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 3, 3], 'depth': [2, 5, 5, 4, 4, 4, 6], 'acc': 63.1}
+05/31 07:21:39 AM Test: [ 0/32]	Time  0.186 ( 0.186)	Loss 8.4525e-01 (8.4525e-01)	Acc  65.62 ( 65.62)
+05/31 07:21:40 AM {'net_id': 'net_evo_2_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 80.92624, 'params': 17.831922, 'loss': 1.0680095062255859, 'resolution': [32, 32], 'width': [16, 24, 32, 40, 104, 168, 168, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 4, 3, 5, 6], 'depth': [1, 2, 4, 3, 4, 7, 7], 'acc': 63.4}
+05/31 07:21:43 AM Test: [ 0/32]	Time  0.204 ( 0.204)	Loss 8.6304e-01 (8.6304e-01)	Acc  71.88 ( 71.88)
+05/31 07:21:44 AM {'net_id': 'net_evo_2_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 81.172, 'params': 11.316122, 'loss': 1.0522725377082824, 'resolution': [32, 32], 'width': [16, 24, 32, 56, 104, 168, 224, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 3, 3, 5, 3], 'depth': [2, 3, 3, 4, 4, 4, 8], 'acc': 63.6}
+05/31 07:21:47 AM Test: [ 0/32]	Time  0.196 ( 0.196)	Loss 8.9103e-01 (8.9103e-01)	Acc  68.75 ( 68.75)
+05/31 07:21:48 AM {'net_id': 'net_evo_2_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 116.425408, 'params': 21.088506, 'loss': 1.0885732965469361, 'resolution': [32, 32], 'width': [24, 24, 24, 56, 80, 168, 192, 192, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 4, 5, 6, 6], 'depth': [1, 5, 4, 4, 6, 7, 7], 'acc': 60.4}
+05/31 07:21:51 AM Test: [ 0/32]	Time  0.197 ( 0.197)	Loss 9.3711e-01 (9.3711e-01)	Acc  62.50 ( 62.50)
+05/31 07:21:52 AM {'net_id': 'net_evo_2_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 84.553056, 'params': 22.08813, 'loss': 1.1056143045425415, 'resolution': [32, 32], 'width': [24, 24, 32, 40, 72, 104, 224, 224, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 3, 3, 5, 6], 'depth': [1, 4, 4, 4, 5, 6, 9], 'acc': 59.6}
+05/31 07:21:54 AM Test: [ 0/32]	Time  0.208 ( 0.208)	Loss 8.2625e-01 (8.2625e-01)	Acc  68.75 ( 68.75)
+05/31 07:21:55 AM {'net_id': 'net_evo_2_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 65.2408, 'params': 9.437482, 'loss': 1.0494183254241944, 'resolution': [32, 32], 'width': [16, 32, 24, 40, 72, 144, 168, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 5, 4, 6, 3], 'depth': [1, 4, 5, 4, 3, 5, 5], 'acc': 64.1}
+05/31 07:21:58 AM Test: [ 0/32]	Time  0.195 ( 0.195)	Loss 1.0062e+00 (1.0062e+00)	Acc  59.38 ( 59.38)
+05/31 07:21:59 AM {'net_id': 'net_evo_2_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 83.189824, 'params': 13.661458, 'loss': 1.1295664072036744, 'resolution': [32, 32], 'width': [24, 24, 24, 56, 80, 96, 224, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 4, 3, 3, 6], 'depth': [1, 4, 4, 4, 3, 7, 7], 'acc': 59.7}
+05/31 07:22:01 AM Test: [ 0/32]	Time  0.195 ( 0.195)	Loss 8.6153e-01 (8.6153e-01)	Acc  68.75 ( 68.75)
+05/31 07:22:02 AM {'net_id': 'net_evo_2_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 124.909632, 'params': 15.284106, 'loss': 1.0368309011459351, 'resolution': [32, 32], 'width': [16, 24, 32, 72, 120, 144, 168, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 3, 4, 5, 6], 'depth': [2, 2, 4, 6, 5, 7, 5], 'acc': 65.0}
+05/31 07:22:05 AM Test: [ 0/32]	Time  0.201 ( 0.201)	Loss 9.1793e-01 (9.1793e-01)	Acc  59.38 ( 59.38)
+05/31 07:22:06 AM {'net_id': 'net_evo_2_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 97.63424, 'params': 15.939418, 'loss': 1.0798804664611816, 'resolution': [32, 32], 'width': [24, 24, 32, 72, 96, 168, 192, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 4, 4, 6], 'depth': [2, 4, 4, 4, 3, 7, 8], 'acc': 60.2}
+05/31 07:22:09 AM Test: [ 0/32]	Time  0.202 ( 0.202)	Loss 8.2800e-01 (8.2800e-01)	Acc  68.75 ( 68.75)
+05/31 07:22:10 AM {'net_id': 'net_evo_3_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 118.410272, 'params': 12.091138, 'loss': 1.0271461310386658, 'resolution': [32, 32], 'width': [24, 32, 24, 56, 96, 192, 168, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 5, 3, 6, 3], 'depth': [2, 4, 5, 4, 7, 4, 7], 'acc': 63.3}
+05/31 07:22:12 AM Test: [ 0/32]	Time  0.194 ( 0.194)	Loss 7.9085e-01 (7.9085e-01)	Acc  75.00 ( 75.00)
+05/31 07:22:13 AM {'net_id': 'net_evo_3_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 107.994688, 'params': 13.673626, 'loss': 1.0391469984054564, 'resolution': [32, 32], 'width': [24, 32, 32, 64, 120, 168, 224, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 3, 3, 5, 4, 3], 'depth': [1, 3, 3, 4, 7, 4, 7], 'acc': 64.6}
+05/31 07:22:16 AM Test: [ 0/32]	Time  0.200 ( 0.200)	Loss 8.6183e-01 (8.6183e-01)	Acc  68.75 ( 68.75)
+05/31 07:22:17 AM {'net_id': 'net_evo_3_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 75.770752, 'params': 13.278474, 'loss': 1.077149075984955, 'resolution': [32, 32], 'width': [16, 24, 24, 40, 88, 144, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 3, 5, 6, 5, 3], 'depth': [2, 2, 3, 5, 3, 7, 6], 'acc': 63.9}
+05/31 07:22:20 AM Test: [ 0/32]	Time  0.220 ( 0.220)	Loss 9.2511e-01 (9.2511e-01)	Acc  68.75 ( 68.75)
+05/31 07:22:21 AM {'net_id': 'net_evo_3_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 140.826752, 'params': 26.812906, 'loss': 1.039672372817993, 'resolution': [32, 32], 'width': [24, 32, 32, 56, 64, 192, 192, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 5, 6, 4, 6], 'depth': [2, 2, 4, 5, 6, 6, 9], 'acc': 63.0}
+05/31 07:22:24 AM Test: [ 0/32]	Time  0.198 ( 0.198)	Loss 7.9485e-01 (7.9485e-01)	Acc  71.88 ( 71.88)
+05/31 07:22:25 AM {'net_id': 'net_evo_3_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 84.62784, 'params': 15.886458, 'loss': 1.03716556930542, 'resolution': [32, 32], 'width': [24, 32, 24, 40, 72, 168, 224, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 5, 3, 6, 3], 'depth': [1, 5, 3, 6, 4, 5, 9], 'acc': 64.5}
+05/31 07:22:27 AM Test: [ 0/32]	Time  0.194 ( 0.194)	Loss 7.7589e-01 (7.7589e-01)	Acc  71.88 ( 71.88)
+05/31 07:22:28 AM {'net_id': 'net_evo_3_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 88.516704, 'params': 13.231162, 'loss': 1.0687857394218445, 'resolution': [32, 32], 'width': [16, 32, 24, 56, 104, 168, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 4, 5, 5, 3], 'depth': [1, 3, 3, 4, 3, 4, 8], 'acc': 64.3}
+05/31 07:22:31 AM Test: [ 0/32]	Time  0.210 ( 0.210)	Loss 9.7648e-01 (9.7648e-01)	Acc  62.50 ( 62.50)
+05/31 07:22:32 AM {'net_id': 'net_evo_3_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 154.891776, 'params': 11.642706, 'loss': 1.0647555289268493, 'resolution': [32, 32], 'width': [16, 24, 32, 72, 120, 168, 168, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 5, 6, 3, 3], 'depth': [2, 5, 4, 6, 4, 7, 6], 'acc': 61.6}
+05/31 07:22:35 AM Test: [ 0/32]	Time  0.199 ( 0.199)	Loss 8.1690e-01 (8.1690e-01)	Acc  71.88 ( 71.88)
+05/31 07:22:36 AM {'net_id': 'net_evo_3_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 122.361472, 'params': 14.785802, 'loss': 1.0518793663978576, 'resolution': [32, 32], 'width': [16, 24, 32, 56, 104, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 5, 5, 4, 3], 'depth': [2, 3, 3, 6, 6, 6, 8], 'acc': 63.5}
+05/31 07:22:38 AM Test: [ 0/32]	Time  0.199 ( 0.199)	Loss 8.4339e-01 (8.4339e-01)	Acc  65.62 ( 65.62)
+05/31 07:22:39 AM {'net_id': 'net_evo_3_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 89.638592, 'params': 8.85873, 'loss': 1.0562450475692748, 'resolution': [32, 32], 'width': [24, 32, 24, 72, 80, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 5, 4, 4, 3], 'depth': [2, 3, 3, 4, 3, 6, 5], 'acc': 64.3}
+05/31 07:22:42 AM Test: [ 0/32]	Time  0.204 ( 0.204)	Loss 8.4042e-01 (8.4042e-01)	Acc  71.88 ( 71.88)
+05/31 07:22:43 AM {'net_id': 'net_evo_3_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 161.890048, 'params': 17.972066, 'loss': 1.0519549236297607, 'resolution': [32, 32], 'width': [16, 24, 32, 72, 120, 144, 168, 224, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 5, 4, 6, 6], 'depth': [2, 2, 5, 6, 5, 7, 5], 'acc': 63.7}
+####    Fine Tuning of Chester     ####
+05/31 07:22:48 AM val:epoch[0]——acc:0.64800000
+05/31 07:22:48 AM save best model!
+05/31 07:22:48 AM Training lr 0.0001
+05/31 07:23:08 AM val:epoch[1]——acc:0.62600000
+05/31 07:23:08 AM Training lr 5.05e-05
+
+=== Predicting ===
+  Allotted compute time remaining: ~26m,33s
+
+========== Dataset   Sadie    =============================================
+  Metadata:
+   - num_classes         : 43
+   - input_shape         : [5328, 3, 29, 29]
+   - codename            : Sadie
+   - benchmark           : 89.03
+   - time_remaining      : 1590.6105229854584
+   - dataset_index       : 2
+   - dataset_total_number: 3
+
+=== Processing Data ===
+  Allotted compute time remaining: ~26m,30s
+Experiment dir : ./results
+
+=== Performing NAS ===
+  Allotted compute time remaining: ~26m,30s
+
+=== Training ===
+  Allotted compute time remaining: ~26m,30s
+####    Train Supernet of Sadie     ####
+05/31 07:23:32 AM Training lr 0.0001
+05/31 07:23:33 AM Epoch: [0][  0/166]	Time  0.734 ( 0.734)	Data  0.155 ( 0.155)	Loss 3.7611e+00 (3.7611e+00)	Acc   0.00 (  0.00)
+05/31 07:24:10 AM Epoch: [0][ 83/166]	Time  0.442 ( 0.448)	Data  0.001 ( 0.003)	Loss 3.2936e+00 (3.5866e+00)	Acc  12.50 ( 10.19)
+05/31 07:24:46 AM Test: [ 0/79]	Time  0.179 ( 0.179)	Loss 2.4486e+00 (2.4486e+00)	Acc  31.25 ( 31.25)
+05/31 07:24:48 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 0, 'flops': 20.154488, 'params': 3.707355, 'loss': 2.820553499842483, 'resolution': [26, 26], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 19.35866982617835}
+05/31 07:24:52 AM Test: [ 0/79]	Time  0.213 ( 0.213)	Loss 2.2755e+00 (2.2755e+00)	Acc  34.38 ( 34.38)
+05/31 07:24:55 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 0, 'flops': 392.403648, 'params': 39.7885, 'loss': 2.5147347659792865, 'resolution': [35, 35], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 26.326207435046125}
+05/31 07:24:56 AM save best supernet_model!
+05/31 07:24:56 AM Training lr 0.03258264382212907
+05/31 07:24:57 AM Epoch: [1][  0/166]	Time  0.626 ( 0.626)	Data  0.153 ( 0.153)	Loss 2.8769e+00 (2.8769e+00)	Acc  15.62 ( 15.62)
+05/31 07:25:31 AM Epoch: [1][ 83/166]	Time  0.380 ( 0.415)	Data  0.002 ( 0.003)	Loss 2.4477e+00 (2.5821e+00)	Acc  31.25 ( 26.64)
+05/31 07:26:06 AM Test: [ 0/79]	Time  0.181 ( 0.181)	Loss 2.0585e+00 (2.0585e+00)	Acc  46.88 ( 46.88)
+05/31 07:26:08 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 1, 'flops': 20.154488, 'params': 3.707355, 'loss': 2.1879849871849126, 'resolution': [26, 26], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 32.22486143346259}
+05/31 07:26:12 AM Test: [ 0/79]	Time  0.223 ( 0.223)	Loss 1.8307e+00 (1.8307e+00)	Acc  43.75 ( 43.75)
+05/31 07:26:16 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 1, 'flops': 392.403648, 'params': 39.7885, 'loss': 1.9501066575990438, 'resolution': [35, 35], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 34.75851148060174}
+05/31 07:26:16 AM save best supernet_model!
+05/31 07:26:16 AM Training lr 0.06033071676240449
+05/31 07:26:17 AM Epoch: [2][  0/166]	Time  0.612 ( 0.612)	Data  0.151 ( 0.151)	Loss 2.0930e+00 (2.0930e+00)	Acc  37.50 ( 37.50)
+05/31 07:26:53 AM Epoch: [2][ 83/166]	Time  0.422 ( 0.435)	Data  0.002 ( 0.003)	Loss 1.8278e+00 (2.0946e+00)	Acc  50.00 ( 36.94)
+05/31 07:27:31 AM Test: [ 0/79]	Time  0.190 ( 0.190)	Loss 2.0501e+00 (2.0501e+00)	Acc  31.25 ( 31.25)
+05/31 07:27:33 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 2, 'flops': 20.154488, 'params': 3.707355, 'loss': 2.0604051797992167, 'resolution': [26, 26], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 35.74821852731591}
+05/31 07:27:37 AM Test: [ 0/79]	Time  0.245 ( 0.245)	Loss 1.6849e+00 (1.6849e+00)	Acc  37.50 ( 37.50)
+05/31 07:27:40 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 2, 'flops': 392.403648, 'params': 39.7885, 'loss': 1.7382686350521168, 'resolution': [35, 35], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 44.06175771971496}
+05/31 07:27:41 AM save best supernet_model!
+05/31 07:27:41 AM Training lr 0.07938926261462366
+05/31 07:27:42 AM Epoch: [3][  0/166]	Time  0.581 ( 0.581)	Data  0.150 ( 0.150)	Loss 2.1771e+00 (2.1771e+00)	Acc  46.88 ( 46.88)
+05/31 07:28:16 AM Epoch: [3][ 83/166]	Time  0.411 ( 0.417)	Data  0.001 ( 0.003)	Loss 1.5073e+00 (1.8801e+00)	Acc  46.88 ( 45.09)
+05/31 07:28:52 AM Test: [ 0/79]	Time  0.186 ( 0.186)	Loss 1.5742e+00 (1.5742e+00)	Acc  50.00 ( 50.00)
+05/31 07:28:54 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 3, 'flops': 20.154488, 'params': 3.707355, 'loss': 1.6914520290099904, 'resolution': [26, 26], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 46.001583516173014}
+05/31 07:28:58 AM Test: [ 0/79]	Time  0.214 ( 0.214)	Loss 1.0204e+00 (1.0204e+00)	Acc  56.25 ( 56.25)
+05/31 07:29:01 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 3, 'flops': 392.403648, 'params': 39.7885, 'loss': 1.2564231675481004, 'resolution': [35, 35], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 58.51148060174189}
+05/31 07:29:02 AM save best supernet_model!
+05/31 07:29:02 AM Training lr 0.06545084971874736
+05/31 07:29:03 AM Epoch: [4][  0/166]	Time  0.599 ( 0.599)	Data  0.155 ( 0.155)	Loss 1.2909e+00 (1.2909e+00)	Acc  65.62 ( 65.62)
+05/31 07:29:37 AM Epoch: [4][ 83/166]	Time  0.416 ( 0.418)	Data  0.001 ( 0.003)	Loss 1.0825e+00 (1.3687e+00)	Acc  68.75 ( 67.75)
+05/31 07:30:13 AM Test: [ 0/79]	Time  0.186 ( 0.186)	Loss 8.7316e-01 (8.7316e-01)	Acc  71.88 ( 71.88)
+05/31 07:30:15 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 4, 'flops': 20.154488, 'params': 3.707355, 'loss': 1.1633510978469184, 'resolution': [26, 26], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 62.47030878859857}
+05/31 07:30:18 AM Test: [ 0/79]	Time  0.211 ( 0.211)	Loss 4.9573e-01 (4.9573e-01)	Acc  84.38 ( 84.38)
+05/31 07:30:21 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 4, 'flops': 392.403648, 'params': 39.7885, 'loss': 0.6741828852858887, 'resolution': [35, 35], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 80.08709415970392}
+05/31 07:30:22 AM save best supernet_model!
+05/31 07:30:22 AM Training lr 0.05
+05/31 07:30:23 AM Epoch: [5][  0/166]	Time  0.623 ( 0.623)	Data  0.155 ( 0.155)	Loss 1.0048e+00 (1.0048e+00)	Acc  84.38 ( 84.38)
+05/31 07:31:00 AM Epoch: [5][ 83/166]	Time  0.427 ( 0.446)	Data  0.002 ( 0.003)	Loss 8.0742e-01 (8.2512e-01)	Acc  81.25 ( 86.76)
+05/31 07:31:36 AM Test: [ 0/79]	Time  0.194 ( 0.194)	Loss 1.1198e+00 (1.1198e+00)	Acc  71.88 ( 71.88)
+05/31 07:31:38 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 5, 'flops': 20.154488, 'params': 3.707355, 'loss': 1.0317241776489778, 'resolution': [26, 26], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 69.12114014251782}
+05/31 07:31:42 AM Test: [ 0/79]	Time  0.222 ( 0.222)	Loss 4.8087e-01 (4.8087e-01)	Acc  84.38 ( 84.38)
+05/31 07:31:45 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 5, 'flops': 392.403648, 'params': 39.7885, 'loss': 0.47557200874870764, 'resolution': [35, 35], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 86.06492475206099}
+05/31 07:31:46 AM save best supernet_model!
+05/31 07:31:46 AM Training lr 0.03454915028125263
+05/31 07:31:46 AM Epoch: [6][  0/166]	Time  0.632 ( 0.632)	Data  0.160 ( 0.160)	Loss 5.5610e-01 (5.5610e-01)	Acc  93.75 ( 93.75)
+05/31 07:32:21 AM Epoch: [6][ 83/166]	Time  0.405 ( 0.422)	Data  0.002 ( 0.003)	Loss 6.3096e-01 (4.9311e-01)	Acc  93.75 ( 94.05)
+05/31 07:32:58 AM Test: [ 0/79]	Time  0.199 ( 0.199)	Loss 5.4385e-01 (5.4385e-01)	Acc  84.38 ( 84.38)
+05/31 07:32:59 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 6, 'flops': 20.154488, 'params': 3.707355, 'loss': 0.7656487549757637, 'resolution': [26, 26], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 76.00950112724153}
+05/31 07:33:03 AM Test: [ 0/79]	Time  0.224 ( 0.224)	Loss 1.4461e-01 (1.4461e-01)	Acc  96.88 ( 96.88)
+05/31 07:33:07 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 6, 'flops': 392.403648, 'params': 39.7885, 'loss': 0.3317957304577363, 'resolution': [35, 35], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 90.93428339169125}
+05/31 07:33:07 AM save best supernet_model!
+05/31 07:33:07 AM Training lr 0.02061073738537635
+05/31 07:33:08 AM Epoch: [7][  0/166]	Time  0.666 ( 0.666)	Data  0.155 ( 0.155)	Loss 5.3190e-01 (5.3190e-01)	Acc 100.00 (100.00)
+05/31 07:33:45 AM Epoch: [7][ 83/166]	Time  0.425 ( 0.448)	Data  0.001 ( 0.003)	Loss 2.4029e-01 (2.8164e-01)	Acc  96.88 ( 97.14)
+05/31 07:34:23 AM Test: [ 0/79]	Time  0.188 ( 0.188)	Loss 5.4272e-01 (5.4272e-01)	Acc  81.25 ( 81.25)
+05/31 07:34:25 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 7, 'flops': 20.154488, 'params': 3.707355, 'loss': 0.6706337836509835, 'resolution': [26, 26], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 79.96832931409823}
+05/31 07:34:29 AM Test: [ 0/79]	Time  0.218 ( 0.218)	Loss 1.0859e-01 (1.0859e-01)	Acc  96.88 ( 96.88)
+05/31 07:34:32 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 7, 'flops': 392.403648, 'params': 39.7885, 'loss': 0.3080202659808825, 'resolution': [35, 35], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 92.55740300870943}
+05/31 07:34:33 AM save best supernet_model!
+05/31 07:34:33 AM Training lr 0.009549150281252618
+05/31 07:34:34 AM Epoch: [8][  0/166]	Time  0.622 ( 0.622)	Data  0.175 ( 0.175)	Loss 2.5231e-01 (2.5231e-01)	Acc  96.88 ( 96.88)
+05/31 07:35:08 AM Epoch: [8][ 83/166]	Time  0.447 ( 0.419)	Data  0.001 ( 0.004)	Loss 1.2913e-01 (1.8462e-01)	Acc 100.00 ( 99.00)
+05/31 07:35:44 AM Test: [ 0/79]	Time  0.194 ( 0.194)	Loss 5.2114e-01 (5.2114e-01)	Acc  84.38 ( 84.38)
+05/31 07:35:46 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 8, 'flops': 20.154488, 'params': 3.707355, 'loss': 0.6022103543283442, 'resolution': [26, 26], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 82.14568484707286}
+05/31 07:35:50 AM Test: [ 0/79]	Time  0.231 ( 0.231)	Loss 1.0189e-01 (1.0189e-01)	Acc  96.88 ( 96.88)
+05/31 07:35:54 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 8, 'flops': 392.403648, 'params': 39.7885, 'loss': 0.26764400304248664, 'resolution': [35, 35], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 93.70546318289786}
+05/31 07:35:55 AM save best supernet_model!
+05/31 07:35:55 AM Training lr 0.0024471741852423235
+05/31 07:35:55 AM Epoch: [9][  0/166]	Time  0.614 ( 0.614)	Data  0.156 ( 0.156)	Loss 1.0582e-01 (1.0582e-01)	Acc 100.00 (100.00)
+05/31 07:36:30 AM Epoch: [9][ 83/166]	Time  0.427 ( 0.422)	Data  0.001 ( 0.003)	Loss 3.6793e-01 (1.2222e-01)	Acc 100.00 ( 99.52)
+05/31 07:37:06 AM Test: [ 0/79]	Time  0.190 ( 0.190)	Loss 5.6344e-01 (5.6344e-01)	Acc  81.25 ( 81.25)
+05/31 07:37:08 AM {'net_id': 'nas_min_net', 'mode': 'evaluate', 'epoch': 9, 'flops': 20.154488, 'params': 3.707355, 'loss': 0.6283969145536612, 'resolution': [26, 26], 'width': [16, 24, 24, 32, 64, 96, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 3, 3, 3, 3], 'depth': [1, 2, 3, 3, 3, 4, 5], 'acc': 81.71021374651863}
+05/31 07:37:12 AM Test: [ 0/79]	Time  0.224 ( 0.224)	Loss 9.7716e-02 (9.7716e-02)	Acc  96.88 ( 96.88)
+05/31 07:37:15 AM {'net_id': 'nas_max_net', 'mode': 'evaluate', 'epoch': 9, 'flops': 392.403648, 'params': 39.7885, 'loss': 0.27450654313103934, 'resolution': [35, 35], 'width': [24, 32, 32, 72, 120, 192, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 5, 6, 6, 6], 'depth': [2, 5, 5, 7, 7, 8, 9], 'acc': 93.74505146476643}
+####    Search of Sadie    ####
+05/31 07:37:18 AM Test: [ 0/79]	Time  0.202 ( 0.202)	Loss 1.7822e-01 (1.7822e-01)	Acc  93.75 ( 93.75)
+05/31 07:37:20 AM {'net_id': 'net_evo_0_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 59.646752, 'params': 9.163563, 'loss': 0.39436117060016473, 'resolution': [29, 29], 'width': [16, 32, 24, 40, 72, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 4, 5, 4, 3], 'depth': [1, 5, 3, 3, 3, 5, 6], 'acc': 90.18210606639195}
+05/31 07:37:22 AM Test: [ 0/79]	Time  0.197 ( 0.197)	Loss 1.7815e-01 (1.7815e-01)	Acc  93.75 ( 93.75)
+05/31 07:37:25 AM {'net_id': 'net_evo_0_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 65.996768, 'params': 12.892875, 'loss': 0.43524086432898695, 'resolution': [29, 29], 'width': [16, 24, 32, 32, 80, 120, 192, 192, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 4, 6, 5, 3], 'depth': [2, 2, 4, 3, 7, 6, 9], 'acc': 88.2026919729636}
+05/31 07:37:28 AM Test: [ 0/79]	Time  0.205 ( 0.205)	Loss 1.8067e-01 (1.8067e-01)	Acc  96.88 ( 96.88)
+05/31 07:37:31 AM {'net_id': 'net_evo_0_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 148.749824, 'params': 25.04878, 'loss': 0.3862561276883052, 'resolution': [29, 29], 'width': [24, 24, 32, 72, 104, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 5, 5, 4, 6], 'depth': [1, 3, 3, 6, 6, 6, 9], 'acc': 90.49881235154395}
+05/31 07:37:34 AM Test: [ 0/79]	Time  0.206 ( 0.206)	Loss 1.3165e-01 (1.3165e-01)	Acc  93.75 ( 93.75)
+05/31 07:37:36 AM {'net_id': 'net_evo_0_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 84.579344, 'params': 13.162819, 'loss': 0.37915772366575656, 'resolution': [29, 29], 'width': [24, 24, 32, 40, 72, 192, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 4, 5, 3, 3], 'depth': [2, 5, 4, 4, 4, 8, 8], 'acc': 91.05304826750042}
+05/31 07:37:39 AM Test: [ 0/79]	Time  0.205 ( 0.205)	Loss 1.2987e-01 (1.2987e-01)	Acc  96.88 ( 96.88)
+05/31 07:37:42 AM {'net_id': 'net_evo_0_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 78.503936, 'params': 10.928075, 'loss': 0.416564596732835, 'resolution': [29, 29], 'width': [24, 24, 32, 56, 72, 144, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 4, 4, 3, 3], 'depth': [2, 3, 5, 3, 5, 8, 9], 'acc': 89.90498809331197}
+05/31 07:37:45 AM Test: [ 0/79]	Time  0.223 ( 0.223)	Loss 2.0592e-01 (2.0592e-01)	Acc  96.88 ( 96.88)
+05/31 07:37:48 AM {'net_id': 'net_evo_0_5', 'mode': 'evaluate', 'epoch': 0, 'flops': 114.633344, 'params': 11.345099, 'loss': 0.34679834147058397, 'resolution': [29, 29], 'width': [16, 32, 24, 64, 120, 104, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 4, 3, 4, 3], 'depth': [1, 4, 5, 7, 6, 5, 9], 'acc': 91.13222486144102}
+05/31 07:37:51 AM Test: [ 0/79]	Time  0.224 ( 0.224)	Loss 1.5912e-01 (1.5912e-01)	Acc  96.88 ( 96.88)
+05/31 07:37:54 AM {'net_id': 'net_evo_0_6', 'mode': 'evaluate', 'epoch': 0, 'flops': 60.93484, 'params': 10.314235, 'loss': 0.35711355781092685, 'resolution': [29, 29], 'width': [16, 24, 24, 32, 64, 120, 144, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 4, 6, 3, 3], 'depth': [2, 5, 3, 7, 4, 8, 9], 'acc': 89.98416468725257}
+05/31 07:37:56 AM Test: [ 0/79]	Time  0.206 ( 0.206)	Loss 2.1007e-01 (2.1007e-01)	Acc  93.75 ( 93.75)
+05/31 07:37:59 AM {'net_id': 'net_evo_0_7', 'mode': 'evaluate', 'epoch': 0, 'flops': 67.586192, 'params': 17.51606, 'loss': 0.3881706068512002, 'resolution': [29, 29], 'width': [24, 32, 24, 40, 72, 104, 224, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 4, 3, 4, 6], 'depth': [1, 4, 4, 4, 3, 7, 9], 'acc': 89.50910530482977}
+05/31 07:38:02 AM Test: [ 0/79]	Time  0.214 ( 0.214)	Loss 1.9374e-01 (1.9374e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:04 AM {'net_id': 'net_evo_0_8', 'mode': 'evaluate', 'epoch': 0, 'flops': 112.815712, 'params': 14.841139, 'loss': 0.32170360872222614, 'resolution': [29, 29], 'width': [24, 32, 32, 48, 88, 192, 224, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 3, 5, 4, 6, 3], 'depth': [2, 3, 3, 7, 7, 4, 7], 'acc': 90.85510682795412}
+05/31 07:38:07 AM Test: [ 0/79]	Time  0.207 ( 0.207)	Loss 1.4687e-01 (1.4687e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:10 AM {'net_id': 'net_evo_0_9', 'mode': 'evaluate', 'epoch': 0, 'flops': 119.212064, 'params': 20.438212, 'loss': 0.31197517197092467, 'resolution': [29, 29], 'width': [16, 24, 32, 72, 96, 168, 192, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 4, 5, 6], 'depth': [2, 3, 4, 6, 4, 6, 8], 'acc': 90.77593032462391}
+05/31 07:38:12 AM Test: [ 0/79]	Time  0.198 ( 0.198)	Loss 1.6169e-01 (1.6169e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:15 AM {'net_id': 'net_evo_0_10', 'mode': 'evaluate', 'epoch': 0, 'flops': 112.224512, 'params': 12.507611, 'loss': 0.3165770005537986, 'resolution': [29, 29], 'width': [24, 32, 24, 72, 120, 168, 192, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 4, 5, 3, 3], 'depth': [1, 4, 3, 3, 7, 5, 7], 'acc': 91.44893111638955}
+05/31 07:38:17 AM Test: [ 0/79]	Time  0.197 ( 0.197)	Loss 1.5071e-01 (1.5071e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:20 AM {'net_id': 'net_evo_0_11', 'mode': 'evaluate', 'epoch': 0, 'flops': 130.563744, 'params': 20.310756, 'loss': 0.3440536698673041, 'resolution': [29, 29], 'width': [16, 32, 24, 72, 88, 168, 224, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 3, 3, 5, 6], 'depth': [1, 2, 5, 4, 7, 4, 7], 'acc': 90.97387173396675}
+05/31 07:38:22 AM Test: [ 0/79]	Time  0.198 ( 0.198)	Loss 1.9874e-01 (1.9874e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:25 AM {'net_id': 'net_evo_0_12', 'mode': 'evaluate', 'epoch': 0, 'flops': 58.646488, 'params': 10.309307, 'loss': 0.3982335495764739, 'resolution': [29, 29], 'width': [16, 24, 24, 56, 64, 104, 192, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 3, 4, 5, 5, 3], 'depth': [1, 4, 3, 3, 6, 4, 8], 'acc': 89.94457637518055}
+05/31 07:38:28 AM Test: [ 0/79]	Time  0.219 ( 0.219)	Loss 1.2841e-01 (1.2841e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:31 AM {'net_id': 'net_evo_0_13', 'mode': 'evaluate', 'epoch': 0, 'flops': 61.477408, 'params': 11.487155, 'loss': 0.38996933062021827, 'resolution': [29, 29], 'width': [24, 32, 32, 32, 64, 120, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 3, 5, 5, 3], 'depth': [1, 2, 5, 6, 5, 6, 8], 'acc': 89.03404589220351}
+05/31 07:38:34 AM Test: [ 0/79]	Time  0.218 ( 0.218)	Loss 1.9986e-01 (1.9986e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:37 AM {'net_id': 'net_evo_0_14', 'mode': 'evaluate', 'epoch': 0, 'flops': 109.2208, 'params': 10.973643, 'loss': 0.30525411992250506, 'resolution': [29, 29], 'width': [24, 32, 32, 56, 104, 120, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 3, 6, 4, 3], 'depth': [2, 3, 5, 7, 5, 7, 9], 'acc': 91.56769596199526}
+05/31 07:38:39 AM Test: [ 0/79]	Time  0.204 ( 0.204)	Loss 1.7817e-01 (1.7817e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:42 AM {'net_id': 'net_evo_0_15', 'mode': 'evaluate', 'epoch': 0, 'flops': 73.039248, 'params': 7.615091, 'loss': 0.35526830986767466, 'resolution': [29, 29], 'width': [24, 24, 24, 72, 80, 104, 168, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 3, 6, 3, 3], 'depth': [1, 3, 4, 7, 3, 7, 8], 'acc': 90.10292953285827}
+05/31 07:38:44 AM Test: [ 0/79]	Time  0.209 ( 0.209)	Loss 1.0252e-01 (1.0252e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:47 AM {'net_id': 'net_evo_0_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 129.362336, 'params': 15.857363, 'loss': 0.3174790030349745, 'resolution': [29, 29], 'width': [24, 32, 32, 72, 80, 144, 168, 224, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 5, 4, 6, 6], 'depth': [2, 4, 5, 4, 5, 6, 5], 'acc': 91.17181314330958}
+05/31 07:38:50 AM Test: [ 0/79]	Time  0.203 ( 0.203)	Loss 1.3887e-01 (1.3887e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:52 AM {'net_id': 'net_evo_0_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 109.404728, 'params': 9.840771, 'loss': 0.3523723799514091, 'resolution': [29, 29], 'width': [24, 24, 32, 72, 88, 144, 192, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 4, 5, 3, 3], 'depth': [2, 3, 4, 7, 6, 5, 5], 'acc': 90.89469517022961}
+05/31 07:38:55 AM Test: [ 0/79]	Time  0.200 ( 0.200)	Loss 1.6921e-01 (1.6921e-01)	Acc  96.88 ( 96.88)
+05/31 07:38:58 AM {'net_id': 'net_evo_0_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 116.279408, 'params': 21.719436, 'loss': 0.37962679854009423, 'resolution': [29, 29], 'width': [16, 24, 32, 40, 120, 120, 192, 224, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 4, 4, 5, 6], 'depth': [2, 2, 5, 6, 4, 6, 9], 'acc': 89.4695170229612}
+05/31 07:39:00 AM Test: [ 0/79]	Time  0.195 ( 0.195)	Loss 1.8331e-01 (1.8331e-01)	Acc  96.88 ( 96.88)
+05/31 07:39:03 AM {'net_id': 'net_evo_0_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 128.985168, 'params': 23.46866, 'loss': 0.34380700997860775, 'resolution': [29, 29], 'width': [16, 24, 24, 72, 80, 192, 168, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 5, 6, 5, 6], 'depth': [1, 2, 3, 4, 6, 6, 7], 'acc': 90.38004750593824}
+05/31 07:39:05 AM Test: [ 0/79]	Time  0.201 ( 0.201)	Loss 1.9207e-01 (1.9207e-01)	Acc  93.75 ( 93.75)
+05/31 07:39:08 AM {'net_id': 'net_evo_0_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 78.076104, 'params': 15.094427, 'loss': 0.5039698662308597, 'resolution': [29, 29], 'width': [16, 32, 24, 64, 64, 144, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 5, 3, 6, 6], 'depth': [1, 2, 3, 6, 5, 7, 6], 'acc': 85.90657162458672}
+05/31 07:39:10 AM Test: [ 0/79]	Time  0.204 ( 0.204)	Loss 1.5546e-01 (1.5546e-01)	Acc  96.88 ( 96.88)
+05/31 07:39:13 AM {'net_id': 'net_evo_0_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 110.024744, 'params': 19.785476, 'loss': 0.3453954736674861, 'resolution': [29, 29], 'width': [16, 24, 32, 72, 88, 168, 192, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 3, 5, 6], 'depth': [1, 2, 4, 6, 4, 6, 8], 'acc': 89.94457640538401}
+05/31 07:39:16 AM Test: [ 0/79]	Time  0.209 ( 0.209)	Loss 1.7556e-01 (1.7556e-01)	Acc  96.88 ( 96.88)
+05/31 07:39:18 AM {'net_id': 'net_evo_0_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 122.568672, 'params': 18.4153, 'loss': 0.3321241739715552, 'resolution': [29, 29], 'width': [16, 24, 32, 56, 104, 168, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 3, 6, 5, 6], 'depth': [2, 3, 5, 6, 4, 7, 8], 'acc': 91.17181314330958}
+05/31 07:39:21 AM Test: [ 0/79]	Time  0.205 ( 0.205)	Loss 2.1941e-01 (2.1941e-01)	Acc  96.88 ( 96.88)
+05/31 07:39:24 AM {'net_id': 'net_evo_0_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 102.129496, 'params': 14.242603, 'loss': 0.34242566216586606, 'resolution': [29, 29], 'width': [24, 32, 32, 40, 104, 192, 192, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 4, 6, 4, 3], 'depth': [2, 5, 4, 4, 4, 8, 9], 'acc': 90.61757719714964}
+05/31 07:39:27 AM Test: [ 0/79]	Time  0.222 ( 0.222)	Loss 1.3165e-01 (1.3165e-01)	Acc  93.75 ( 93.75)
+05/31 07:39:30 AM {'net_id': 'net_evo_0_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 84.579344, 'params': 13.162819, 'loss': 0.37915772366575656, 'resolution': [29, 29], 'width': [24, 24, 32, 40, 72, 192, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 4, 5, 3, 3], 'depth': [2, 5, 4, 4, 4, 8, 8], 'acc': 91.05304826750042}
+05/31 07:39:33 AM Test: [ 0/79]	Time  0.214 ( 0.214)	Loss 2.2723e-01 (2.2723e-01)	Acc  93.75 ( 93.75)
+05/31 07:39:35 AM {'net_id': 'net_evo_0_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 92.36912, 'params': 10.777251, 'loss': 0.3065261019663686, 'resolution': [29, 29], 'width': [16, 32, 32, 56, 104, 120, 192, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 6, 4, 3], 'depth': [2, 3, 4, 7, 4, 7, 8], 'acc': 91.48851933785119}
+05/31 07:39:38 AM Test: [ 0/79]	Time  0.204 ( 0.204)	Loss 1.7627e-01 (1.7627e-01)	Acc  96.88 ( 96.88)
+05/31 07:39:40 AM {'net_id': 'net_evo_1_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 74.327464, 'params': 13.399931, 'loss': 0.34963542248932783, 'resolution': [29, 29], 'width': [16, 24, 32, 56, 80, 96, 224, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 4, 5, 3, 6], 'depth': [1, 2, 3, 3, 7, 5, 7], 'acc': 90.34045922406968}
+05/31 07:39:43 AM Test: [ 0/79]	Time  0.205 ( 0.205)	Loss 1.6392e-01 (1.6392e-01)	Acc  96.88 ( 96.88)
+05/31 07:39:45 AM {'net_id': 'net_evo_1_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 108.499056, 'params': 18.26262, 'loss': 0.32587672714571675, 'resolution': [29, 29], 'width': [16, 24, 24, 64, 120, 144, 168, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 5, 5, 4, 6], 'depth': [1, 2, 3, 3, 7, 7, 6], 'acc': 90.97387173396675}
+05/31 07:39:48 AM Test: [ 0/79]	Time  0.207 ( 0.207)	Loss 7.9676e-02 (7.9676e-02)	Acc  96.88 ( 96.88)
+05/31 07:39:51 AM {'net_id': 'net_evo_1_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 157.95368, 'params': 27.774604, 'loss': 0.334338274988643, 'resolution': [29, 29], 'width': [16, 24, 32, 56, 104, 144, 224, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 4, 5, 5, 6], 'depth': [2, 5, 5, 7, 4, 8, 8], 'acc': 91.80522565320665}
+05/31 07:39:54 AM Test: [ 0/79]	Time  0.200 ( 0.200)	Loss 1.7662e-01 (1.7662e-01)	Acc  96.88 ( 96.88)
+05/31 07:39:56 AM {'net_id': 'net_evo_1_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 79.754096, 'params': 11.693387, 'loss': 0.3427629112395047, 'resolution': [29, 29], 'width': [16, 32, 24, 56, 120, 168, 144, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 4, 3, 5, 6], 'depth': [1, 4, 3, 4, 4, 5, 6], 'acc': 89.86539984164688}
+05/31 07:39:59 AM Test: [ 0/79]	Time  0.202 ( 0.202)	Loss 1.8630e-01 (1.8630e-01)	Acc  96.88 ( 96.88)
+05/31 07:40:02 AM {'net_id': 'net_evo_1_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 129.9782, 'params': 25.021972, 'loss': 0.34800698304355665, 'resolution': [29, 29], 'width': [16, 24, 32, 64, 120, 144, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 3, 5, 4, 6], 'depth': [1, 2, 3, 6, 6, 7, 9], 'acc': 91.48851939825812}
+05/31 07:40:04 AM Test: [ 0/79]	Time  0.202 ( 0.202)	Loss 1.5846e-01 (1.5846e-01)	Acc  96.88 ( 96.88)
+05/31 07:40:06 AM {'net_id': 'net_evo_1_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 81.828552, 'params': 8.105043, 'loss': 0.3744416013536997, 'resolution': [29, 29], 'width': [24, 32, 24, 72, 80, 144, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 5, 4, 4, 3], 'depth': [2, 5, 3, 4, 3, 6, 5], 'acc': 90.06334122078624}
+05/31 07:40:09 AM Test: [ 0/79]	Time  0.214 ( 0.214)	Loss 2.2723e-01 (2.2723e-01)	Acc  93.75 ( 93.75)
+05/31 07:40:12 AM {'net_id': 'net_evo_1_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 92.36912, 'params': 10.777251, 'loss': 0.3065261019663686, 'resolution': [29, 29], 'width': [16, 32, 32, 56, 104, 120, 192, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 6, 4, 3], 'depth': [2, 3, 4, 7, 4, 7, 8], 'acc': 91.48851933785119}
+05/31 07:40:15 AM Test: [ 0/79]	Time  0.205 ( 0.205)	Loss 1.3440e-01 (1.3440e-01)	Acc  96.88 ( 96.88)
+05/31 07:40:17 AM {'net_id': 'net_evo_1_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 111.62604, 'params': 14.539347, 'loss': 0.3106181174516678, 'resolution': [29, 29], 'width': [16, 24, 32, 56, 104, 144, 168, 224, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 5, 3, 4, 5, 6], 'depth': [2, 4, 5, 6, 5, 6, 5], 'acc': 91.33016627078385}
+05/31 07:40:20 AM Test: [ 0/79]	Time  0.210 ( 0.210)	Loss 2.2274e-01 (2.2274e-01)	Acc  93.75 ( 93.75)
+05/31 07:40:23 AM {'net_id': 'net_evo_1_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 87.096792, 'params': 11.851147, 'loss': 0.325604914037934, 'resolution': [29, 29], 'width': [24, 32, 24, 40, 72, 192, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 3, 6, 4, 3], 'depth': [2, 5, 5, 3, 5, 7, 6], 'acc': 91.48851939825812}
+05/31 07:40:26 AM Test: [ 0/79]	Time  0.202 ( 0.202)	Loss 1.4076e-01 (1.4076e-01)	Acc  96.88 ( 96.88)
+05/31 07:40:28 AM {'net_id': 'net_evo_1_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 94.619016, 'params': 10.345579, 'loss': 0.39274390864164604, 'resolution': [29, 29], 'width': [24, 24, 32, 72, 104, 104, 168, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 3, 6, 3, 3], 'depth': [1, 3, 4, 7, 3, 6, 9], 'acc': 88.99445758013148}
+05/31 07:40:31 AM Test: [ 0/79]	Time  0.204 ( 0.204)	Loss 2.4584e-01 (2.4584e-01)	Acc  96.88 ( 96.88)
+05/31 07:40:34 AM {'net_id': 'net_evo_2_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 81.532352, 'params': 8.612979, 'loss': 0.3389824872109405, 'resolution': [29, 29], 'width': [16, 32, 24, 56, 64, 120, 192, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 5, 6, 4, 3], 'depth': [1, 5, 5, 6, 5, 4, 7], 'acc': 91.01345995542839}
+05/31 07:40:36 AM Test: [ 0/79]	Time  0.204 ( 0.204)	Loss 1.7741e-01 (1.7741e-01)	Acc  96.88 ( 96.88)
+05/31 07:40:38 AM {'net_id': 'net_evo_2_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 88.720072, 'params': 9.772523, 'loss': 0.3272120967943897, 'resolution': [29, 29], 'width': [24, 32, 24, 40, 104, 168, 144, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 5, 6, 3, 3], 'depth': [1, 4, 4, 4, 5, 4, 6], 'acc': 90.81551860649247}
+05/31 07:40:40 AM Test: [ 0/79]	Time  0.192 ( 0.192)	Loss 1.0765e-01 (1.0765e-01)	Acc  96.88 ( 96.88)
+05/31 07:40:42 AM {'net_id': 'net_evo_2_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 69.29332, 'params': 14.006947, 'loss': 0.39370473129165995, 'resolution': [29, 29], 'width': [16, 32, 24, 48, 104, 144, 144, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 5, 3, 5, 6], 'depth': [1, 2, 3, 3, 3, 6, 6], 'acc': 89.39034042902061}
+05/31 07:40:44 AM Test: [ 0/79]	Time  0.197 ( 0.197)	Loss 1.5738e-01 (1.5738e-01)	Acc  96.88 ( 96.88)
+05/31 07:40:47 AM {'net_id': 'net_evo_2_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 77.577744, 'params': 11.320379, 'loss': 0.3397878197479701, 'resolution': [29, 29], 'width': [16, 24, 32, 56, 104, 168, 224, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 3, 3, 5, 3], 'depth': [2, 3, 3, 4, 4, 4, 8], 'acc': 90.45922400926845}
+05/31 07:40:50 AM Test: [ 0/79]	Time  0.211 ( 0.211)	Loss 1.7354e-01 (1.7354e-01)	Acc  96.88 ( 96.88)
+05/31 07:40:52 AM {'net_id': 'net_evo_2_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 107.906496, 'params': 20.751932, 'loss': 0.3441126693338038, 'resolution': [29, 29], 'width': [16, 24, 24, 56, 80, 144, 168, 224, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 3, 6, 6, 6], 'depth': [1, 4, 5, 5, 6, 6, 7], 'acc': 91.13222486144102}
+05/31 07:40:55 AM Test: [ 0/79]	Time  0.215 ( 0.215)	Loss 1.5545e-01 (1.5545e-01)	Acc  96.88 ( 96.88)
+05/31 07:40:57 AM {'net_id': 'net_evo_2_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 107.239384, 'params': 23.16478, 'loss': 0.32352839970720826, 'resolution': [29, 29], 'width': [16, 24, 32, 56, 80, 96, 224, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 4, 5, 5, 6], 'depth': [1, 2, 5, 3, 4, 8, 7], 'acc': 90.89469510982269}
+05/31 07:41:00 AM Test: [ 0/79]	Time  0.193 ( 0.193)	Loss 1.7435e-01 (1.7435e-01)	Acc  96.88 ( 96.88)
+05/31 07:41:02 AM {'net_id': 'net_evo_2_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 60.36588, 'params': 11.579683, 'loss': 0.3882984671555902, 'resolution': [29, 29], 'width': [16, 32, 24, 40, 72, 144, 192, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 3, 5, 4, 3], 'depth': [1, 2, 3, 6, 3, 5, 9], 'acc': 90.30087088179418}
+05/31 07:41:04 AM Test: [ 0/79]	Time  0.206 ( 0.206)	Loss 1.9081e-01 (1.9081e-01)	Acc  96.88 ( 96.88)
+05/31 07:41:07 AM {'net_id': 'net_evo_2_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 91.90264, 'params': 17.880644, 'loss': 0.3160990750091187, 'resolution': [29, 29], 'width': [16, 32, 32, 56, 104, 120, 224, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 3, 5, 4, 6], 'depth': [2, 2, 3, 3, 7, 5, 9], 'acc': 90.77593032462391}
+05/31 07:41:10 AM Test: [ 0/79]	Time  0.215 ( 0.215)	Loss 1.9251e-01 (1.9251e-01)	Acc  96.88 ( 96.88)
+05/31 07:41:13 AM {'net_id': 'net_evo_2_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 107.516568, 'params': 11.264283, 'loss': 0.3025916946944224, 'resolution': [29, 29], 'width': [24, 32, 24, 40, 104, 144, 168, 192, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 4, 6, 4, 3], 'depth': [2, 5, 5, 7, 5, 8, 6], 'acc': 91.68646080760095}
+05/31 07:41:16 AM Test: [ 0/79]	Time  0.202 ( 0.202)	Loss 1.7974e-01 (1.7974e-01)	Acc  96.88 ( 96.88)
+05/31 07:41:18 AM {'net_id': 'net_evo_2_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 103.522608, 'params': 17.396908, 'loss': 0.34071484887684894, 'resolution': [29, 29], 'width': [16, 24, 32, 56, 104, 168, 168, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 3, 6, 3, 6], 'depth': [2, 2, 3, 3, 7, 5, 8], 'acc': 90.69675376088678}
+05/31 07:41:21 AM Test: [ 0/79]	Time  0.203 ( 0.203)	Loss 1.3632e-01 (1.3632e-01)	Acc  96.88 ( 96.88)
+05/31 07:41:23 AM {'net_id': 'net_evo_3_mutate_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 105.17712, 'params': 12.002211, 'loss': 0.3335377518515311, 'resolution': [29, 29], 'width': [24, 32, 24, 64, 96, 192, 168, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 4, 5, 3, 6, 3], 'depth': [1, 3, 4, 4, 7, 4, 7], 'acc': 90.57798891528108}
+05/31 07:41:26 AM Test: [ 0/79]	Time  0.200 ( 0.200)	Loss 1.7095e-01 (1.7095e-01)	Acc  96.88 ( 96.88)
+05/31 07:41:28 AM {'net_id': 'net_evo_3_mutate_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 111.857112, 'params': 20.501796, 'loss': 0.3322753674532814, 'resolution': [29, 29], 'width': [16, 24, 24, 72, 120, 144, 224, 240, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 3, 4, 5, 6], 'depth': [1, 3, 3, 5, 7, 4, 7], 'acc': 90.89469510982269}
+05/31 07:41:30 AM Test: [ 0/79]	Time  0.192 ( 0.192)	Loss 1.4014e-01 (1.4014e-01)	Acc  96.88 ( 96.88)
+05/31 07:41:32 AM {'net_id': 'net_evo_3_mutate_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 57.472656, 'params': 10.434947, 'loss': 0.3438045154321977, 'resolution': [29, 29], 'width': [24, 32, 24, 40, 80, 144, 168, 224, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 4, 3, 3, 6, 6, 3], 'depth': [1, 3, 4, 4, 3, 6, 5], 'acc': 90.53840063341251}
+05/31 07:41:35 AM Test: [ 0/79]	Time  0.214 ( 0.214)	Loss 1.5470e-01 (1.5470e-01)	Acc  93.75 ( 93.75)
+05/31 07:41:38 AM {'net_id': 'net_evo_3_mutate_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 98.510928, 'params': 16.088611, 'loss': 0.3695347013684935, 'resolution': [29, 29], 'width': [24, 24, 24, 48, 64, 192, 168, 240, 224], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 4, 6, 5, 3], 'depth': [2, 3, 5, 5, 5, 6, 9], 'acc': 90.14251781472684}
+05/31 07:41:41 AM Test: [ 0/79]	Time  0.206 ( 0.206)	Loss 1.7692e-01 (1.7692e-01)	Acc  93.75 ( 93.75)
+05/31 07:41:44 AM {'net_id': 'net_evo_3_mutate_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 79.569336, 'params': 13.541723, 'loss': 0.36912447812296717, 'resolution': [29, 29], 'width': [24, 32, 24, 40, 72, 168, 192, 224, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 4, 5, 3, 6, 3], 'depth': [1, 4, 3, 7, 5, 5, 9], 'acc': 89.42992874109264}
+05/31 07:41:47 AM Test: [ 0/79]	Time  0.208 ( 0.208)	Loss 1.4383e-01 (1.4383e-01)	Acc  96.88 ( 96.88)
+05/31 07:41:50 AM {'net_id': 'net_evo_3_crossover_0', 'mode': 'evaluate', 'epoch': 0, 'flops': 80.191648, 'params': 10.959307, 'loss': 0.3443229912071594, 'resolution': [29, 29], 'width': [24, 32, 24, 40, 104, 144, 168, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 4, 3, 5, 4, 3], 'depth': [1, 5, 3, 7, 3, 8, 6], 'acc': 91.56769596199526}
+05/31 07:41:53 AM Test: [ 0/79]	Time  0.222 ( 0.222)	Loss 1.8144e-01 (1.8144e-01)	Acc  96.88 ( 96.88)
+05/31 07:41:56 AM {'net_id': 'net_evo_3_crossover_1', 'mode': 'evaluate', 'epoch': 0, 'flops': 133.647264, 'params': 18.613836, 'loss': 0.33395278585967053, 'resolution': [29, 29], 'width': [16, 24, 32, 56, 104, 168, 168, 192, 128], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 3, 6, 3, 6], 'depth': [2, 2, 5, 6, 7, 7, 8], 'acc': 91.0134600158353}
+05/31 07:41:59 AM Test: [ 0/79]	Time  0.210 ( 0.210)	Loss 1.5726e-01 (1.5726e-01)	Acc  93.75 ( 93.75)
+05/31 07:42:01 AM {'net_id': 'net_evo_3_crossover_2', 'mode': 'evaluate', 'epoch': 0, 'flops': 108.647256, 'params': 13.372267, 'loss': 0.40027338073471663, 'resolution': [29, 29], 'width': [24, 24, 24, 40, 104, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 3, 5, 5, 4, 3], 'depth': [2, 5, 3, 6, 6, 6, 6], 'acc': 90.06334125098971}
+05/31 07:42:04 AM Test: [ 0/79]	Time  0.207 ( 0.207)	Loss 1.5613e-01 (1.5613e-01)	Acc  96.88 ( 96.88)
+05/31 07:42:06 AM {'net_id': 'net_evo_3_crossover_3', 'mode': 'evaluate', 'epoch': 0, 'flops': 108.200536, 'params': 11.574235, 'loss': 0.5037841936094083, 'resolution': [29, 29], 'width': [24, 24, 32, 72, 72, 192, 144, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 3, 5, 5, 5, 3, 3], 'depth': [2, 3, 4, 4, 4, 6, 8], 'acc': 87.6880443388757}
+05/31 07:42:09 AM Test: [ 0/79]	Time  0.201 ( 0.201)	Loss 1.3558e-01 (1.3558e-01)	Acc  96.88 ( 96.88)
+05/31 07:42:12 AM {'net_id': 'net_evo_3_crossover_4', 'mode': 'evaluate', 'epoch': 0, 'flops': 112.976224, 'params': 22.617844, 'loss': 0.32716545368222516, 'resolution': [29, 29], 'width': [16, 24, 32, 56, 104, 144, 168, 240, 512], 'kernel_size': [3, 3, 3, 3, 3, 3, 3], 'expand_ratio': [1, 5, 5, 3, 5, 4, 6], 'depth': [2, 3, 3, 6, 4, 7, 9], 'acc': 91.48851939825812}
+####    Fine Tuning of Sadie     ####
+05/31 07:42:19 AM val:epoch[0]——acc:0.91805226
+05/31 07:42:20 AM save best model!
+05/31 07:42:20 AM Training lr 0.0001
+05/31 07:42:48 AM val:epoch[1]——acc:0.91488519
+05/31 07:42:48 AM Training lr 5.05e-05
+
+=== Predicting ===
+  Allotted compute time remaining: ~6m,44s
+
+mkdir scoring/labels
+mkdir scoring/predictions
+rsync -avr --exclude='**/*x.npy' --exclude='**/train*.npy' --exclude='**/valid*.npy'   --include='**/test_y.npy' datasets/* scoring/labels/
+sending incremental file list
+Dataset_Chester/
+Dataset_Chester/metadata
+Dataset_Chester/test_y.npy
+Dataset_Isabella/
+Dataset_Isabella/metadata
+Dataset_Isabella/test_y.npy
+Dataset_Sadie/
+Dataset_Sadie/metadata
+Dataset_Sadie/test_y.npy
+
+sent 27,230 bytes  received 142 bytes  54,744.00 bytes/sec
+total size is 26,679  speedup is 0.97
+cp -R package/predictions scoring
+cp evaluation/score.py scoring/score.py
+cd scoring; python3 score.py
+===========================================================================
+=============    Your CVPR-NAS 2022 Submission is scoring     =============
+===========================================================================
+== Scoring Dataset_Isabella ==
+['Sadie_stats.pkl', 'Isabella.npy', 'Sadie.npy', 'Chester_stats.pkl', 'Isabella_stats.pkl', 'Chester.npy']
+Isabella
+Raw Score:    18.833
+Adj Score:    -1.195
+Model Params: 39,769,086
+Runtime:      985.5s
+== Scoring Dataset_Chester ==
+['Sadie_stats.pkl', 'Isabella.npy', 'Sadie.npy', 'Chester_stats.pkl', 'Isabella_stats.pkl', 'Chester.npy']
+Chester
+Raw Score:    64.800
+Adj Score:    1.718
+Model Params: 39,771,570
+Runtime:      1,023.8s
+== Scoring Dataset_Sadie ==
+['Sadie_stats.pkl', 'Isabella.npy', 'Sadie.npy', 'Chester_stats.pkl', 'Isabella_stats.pkl', 'Chester.npy']
+Sadie
+Raw Score:    91.924
+Adj Score:    2.638
+Model Params: 39,788,499
+Runtime:      1,193.8s
+===========================
+Final Score: 3.160
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  1147  100   769  100   378   5231   2571 --:--:-- --:--:-- --:--:--  7802
+{"data":{"id":81,"attributes":{"uuid":"59d8df0c-3e25-4a83-bc22-4b57cc5a4734","title":"dxm_test0531","user_email":"517938333@qq.com","path":"https://cvprnas.blob.core.windows.net/submissions/59d8df0c-3e25-4a83-bc22-4b57cc5a4734.zip?sv=2021-12-02&se=2024-05-31T06%3A39%3A14Z&sr=b&sp=r&sig=eCvQx9csfYtlool5%2Bvr7sJxDfOlBlJxvQyHLF6vHPl8%3D","Chester_Raw_Score":64.8,"Chester_Adj_Score":1.718,"Chester_Params":39771570,"Chester_Runtime":1023.75,"Isabella_Raw_Score":18.833,"Isabella_Adj_Score":-1.195,"Isabella_Params":39769086,"Isabella_Runtime":985.53,"Sadie_Raw_Score":91.924,"Sadie_Adj_Score":2.638,"Sadie_Params":39788499,"Sadie_Runtime":1193.83,"Final_Score":3.1603400186897668,"createdAt":"2023-05-31T06:39:14.554Z","updatedAt":"2023-05-31T07:43:29.387Z"}},"meta":{}}
